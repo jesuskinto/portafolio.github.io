@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <p-header></p-header>
+    <p-header :activated="activated"></p-header>
     <div id="wrapper-sections">
       <section id="tecnologies" class="section">
         <div class="container" >
@@ -107,7 +107,7 @@
         </div>
         <div class="container pproyect">
           <div class="columns is-multiline">
-            <p-project>
+            <p-project @projectClicked="modalProject = 'crediuno'">
               <img slot="image" src="@/assets/projects/crediuno.png">
               <h2 slot="title">Crediuno</h2>
             </p-project>
@@ -205,6 +205,39 @@
         </div>
       </section>
     </div>
+    <p-modal-project
+      :activate="showModalCrediuno"
+      @close="modalProject = null">
+      <img slot="image" src="@/assets/projects/crediuno.png" alt="">
+      <template slot="content">
+        <h1 class="title">Crediuno</h1>
+        <h2 class="subtitle">Plataforma de solicitud de creditos</h2>
+        <span>url: <a href="https://app.crediuno.com.ar/">https://app.crediuno.com.ar/</a></span>
+        <hr>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Velit veniam dolore nisi error dolor maxime accusantium,
+          sed expedita, quo vero laboriosam eius consectetur animi
+          ad! Ad iusto a minus corrupti!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Velit veniam dolore nisi error dolor maxime accusantium,
+          sed expedita, quo vero laboriosam eius consectetur animi
+          ad! Ad iusto a minus corrupti!
+        </p>
+        <hr>
+        <h3 class="subtitle">Tecnologias usadas:</h3>
+        <ol class="modal-list">
+          <li>Django <progress class="progress is-success" value="60" max="100"></progress></li>
+          <li>Django Rest Framework <progress class="progress is-success" value="10" max="100"></progress></li>
+          <li>Mysql <progress class="progress is-success" value="30" max="100"></progress></li>
+          <li>Celery <progress class="progress is-success" value="30" max="100"></progress></li>
+          <li>Rabbitmq <progress class="progress is-success" value="30" max="100"></progress></li>
+          <li>Vuejs <progress class="progress is-success" value="60" max="100"></progress></li>
+          <li>Vue-Router <progress class="progress is-success" value="30" max="100"></progress></li>
+          <li>VeeValidate <progress class="progress is-success" value="10" max="100"></progress></li>
+        </ol>
+      </template>
+    </p-modal-project>
     <p-footer></p-footer>
   </div>
 </template>
@@ -215,6 +248,7 @@ import PTecnology from '@/components/Tecnology.vue'
 import PProject from '@/components/Project.vue'
 import PCertific from '@/components/Certific.vue'
 import PEmailBox from '@/components/EmailBox.vue'
+import PModalProject from '@/components/ModalProject.vue'
 import PFooter from '@/components/layout/Footer.vue'
 
 export default {
@@ -222,7 +256,12 @@ export default {
 
   data () {
     return {
-      $sticky: null
+      $sticky: null,
+      $proyects: null,
+      $contact: null,
+      $certific: null,
+      activated: 'tecnoligies',
+      modalProject: null
     }
   },
 
@@ -232,17 +271,32 @@ export default {
     PProject,
     PCertific,
     PEmailBox,
+    PModalProject,
     PFooter
   },
 
   mounted () {
     window.addEventListener('scroll', this.handleScroll)
     const tabs = document.getElementById('tabs')
+    const tecnologies = document.getElementById('tecnologies')
+    const proyects = document.getElementById('proyects')
+    const certific = document.getElementById('certific')
+    const contact = document.getElementById('contact')
     this.$sticky = tabs.offsetTop
+    this.$tecnologies = tecnologies.offsetTop
+    this.$proyects = proyects.offsetTop
+    this.$certific = certific.offsetTop
+    this.$contact = contact.offsetTop
   },
 
   destroyed () {
     window.removeEventListener('scroll', this.handleScroll)
+  },
+
+  computed: {
+    showModalCrediuno () {
+      return this.modalProject === 'crediuno'
+    }
   },
 
   methods: {
@@ -254,6 +308,24 @@ export default {
         document.getElementById('tabs')
           .classList.remove('sticky')
       }
+
+      if (this.inRange(this.$tecnologies, this.$proyects)) {
+        this.activated = 'tecnologies'
+      } else if (this.inRange(this.$proyects, this.$certific)) {
+        this.activated = 'proyects'
+      } else if (this.inRange(this.$certific, this.$contact)) {
+        this.activated = 'certific'
+      } else if (this.inRange(this.$contact)) {
+        this.activated = 'contact'
+      }
+    },
+    inRange (sectionStart, sectionEnd = null) {
+      const offter = 126
+      const position = window.pageYOffset + offter
+      if (sectionEnd) {
+        return (position >= sectionStart && position < sectionEnd)
+      }
+      return (position >= sectionStart)
     }
   }
 }

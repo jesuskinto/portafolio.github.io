@@ -1,5 +1,5 @@
 <template>
-  <div class="tecnology">
+  <div class="tecnology" data-aos="zoom-in-left">
     <figure>
       <slot name="image">
         <img src="../assets/vuejs.png">

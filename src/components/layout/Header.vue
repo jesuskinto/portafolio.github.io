@@ -72,7 +72,7 @@
             </li>
             <li
               :class="{'is-active': isActive('contact')}"
-              v-scroll-to="'#contact'"
+              v-scroll-to="{ el: '#contact', offset: -50,}"
               @click="activate('contact')">
               <a>Contact</a>
             </li>
@@ -91,12 +91,26 @@ export default {
       active: 'tecnologies'
     }
   },
+  props: {
+    activated: {
+      type: String,
+      default: 'tecnologies',
+      required: true
+    }
+  },
   methods: {
     isActive (nameSection) {
       return this.active === nameSection
     },
     activate (nameSection) {
       this.active = nameSection
+    }
+  },
+  watch: {
+    activated: function (newValue, oldValue) {
+      if (newValue === oldValue) return
+
+      this.active = newValue
     }
   }
 }

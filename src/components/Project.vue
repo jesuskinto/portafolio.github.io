@@ -1,6 +1,6 @@
 <template>
   <div class="Proyect column is-6" data-aos="zoom-in">
-    <div class="box">
+    <div class="box" @click="$emit('projectClicked')">
       <figure image is-3by2>
         <slot name="image">
           <img src="../assets/vuejs.png">
@@ -25,5 +25,8 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="scss" scoped>
+  .box {
+    cursor: pointer;
+  }
 </style>
