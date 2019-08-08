@@ -1,9 +1,7 @@
 <template>
   <div class="tecnology" data-aos="zoom-in-left">
     <figure>
-      <slot name="image">
-        <img src="../assets/vuejs.png">
-      </slot>
+      <slot name="image"></slot>
     </figure>
     <p>{{title}}</p>
     <progress class="progress is-success" :value="progress" max="100"></progress>

@@ -1,5 +1,5 @@
 <template>
-  <header class="hero is-info is-large is-bold">
+  <header class="hero is-info is-medium is-bold">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
@@ -19,10 +19,7 @@
                 Lang
               </a>
               <span class="navbar-item">
-                <a class="button is-info is-inverted">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
+                <a href="https://github.com/jesuskinto" target="_blanck" class="button is-info is-inverted">
                   <span>Github</span>
                 </a>
               </span>
@@ -34,6 +31,11 @@
 
     <div class="hero-body">
       <div class="container has-text-centered">
+        <div class="wrapper-image">
+          <figure class="image is-1by1">
+            <img src="@/assets/avatar.jpg">
+          </figure>
+        </div>
         <p class="title">
           JesusKinto
         </p>
@@ -116,7 +118,11 @@ export default {
 }
 </script>
 
-<style scoped lang="sass">
-.is-h100
-  height: 100vh
+<style lang="sass" scoped>
+.wrapper-image
+  display: inline-block
+  width: 200px
+  border: solid 5px white
+  border-radius: 150px
+  overflow: hidden
 </style>

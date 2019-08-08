@@ -5,9 +5,7 @@
     data-aos="zoom-in">
     <div class="box">
       <figure image is-3by2>
-        <slot name="image">
-          <img src="../assets/vuejs.png">
-        </slot>
+        <slot name="image"></slot>
       </figure>
       <div class="wrapper">
         <slot name= "title">

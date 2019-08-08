@@ -1,10 +1,8 @@
 <template>
   <div class="Proyect column is-6" data-aos="zoom-in">
     <div class="box" @click="$emit('projectClicked')">
-      <figure image is-3by2>
-        <slot name="image">
-          <img src="../assets/vuejs.png">
-        </slot>
+      <figure class="image is-3by2">
+        <slot name="image"></slot>
       </figure>
       <div class="wrapper">
         <slot name= "title">

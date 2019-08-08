@@ -17,7 +17,11 @@ const WORDS = [
   'Extraño',
   'Elegante',
   'Freeke',
-  'Eficiente'
+  'Eficiente',
+  ';)',
+  '🤓',
+  'Nerd',
+  '💙'
 ]
 export default {
   data () {
