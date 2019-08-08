@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'modal-project',
+  name: 'modal',
   props: {
     activate: {
       required: true,

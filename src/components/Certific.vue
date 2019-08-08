@@ -1,23 +1,35 @@
 <template>
-  <div class="Proyect column is-4" data-aos="zoom-in">
+  <a class="Proyect column is-3"
+    :href="href"
+    target="_blank"
+    data-aos="zoom-in">
     <div class="box">
       <figure image is-3by2>
         <slot name="image">
           <img src="../assets/vuejs.png">
         </slot>
       </figure>
-      <slot name= "title">
-        <h2>Titulo</h2>
-      </slot>
+      <div class="wrapper">
+        <slot name= "title">
+          <h2>Titulo</h2>
+        </slot>
+      </div>
     </div>
-  </div>
+  </a>
 </template>
 
 <script>
 export default {
+  props: ['href'],
   name: 'Proyect'
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
+.box
+  padding: 0
+  overflow: hidden
+  cursor: pointer
+.wrapper
+  padding: 15px
 </style>

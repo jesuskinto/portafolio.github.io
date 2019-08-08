@@ -6,15 +6,17 @@
           <img src="../assets/vuejs.png">
         </slot>
       </figure>
-      <slot name= "title">
-        <h2>Titulo</h2>
-      </slot>
-      <slot name="parrafo">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          dolore magna aliqua. Ut enim ad minim...
-        </p>
-      </slot>
+      <div class="wrapper">
+        <slot name= "title">
+          <h2>Titulo</h2>
+        </slot>
+        <slot name="parrafo">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            dolore magna aliqua. Ut enim ad minim...
+          </p>
+        </slot>
+      </div>
     </div>
   </div>
 </template>
@@ -25,8 +27,11 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-  .box {
-    cursor: pointer;
-  }
+<style lang="sass" scoped>
+.box
+  padding: 0
+  overflow: hidden
+  cursor: pointer
+.wrapper
+  padding: 15px
 </style>

@@ -109,19 +109,19 @@
           <div class="columns is-multiline">
             <p-project @projectClicked="modalProject = 'crediuno'">
               <img slot="image" src="@/assets/projects/crediuno.png">
-              <h2 slot="title">Crediuno</h2>
+              <strong slot="title">Crediuno</strong>
             </p-project>
             <p-project>
               <img slot="image" src="@/assets/projects/pollitoIngles.png">
-              <h2 slot="title">Pollito Ingles</h2>
+              <strong slot="title">Pollito Ingles</strong>
             </p-project>
             <p-project>
               <img slot="image" src="@/assets/projects/portafolio.png">
-              <h2 slot="title">Portafolio</h2>
+              <strong slot="title">Portafolio</strong>
             </p-project>
             <p-project>
               <img slot="image" src="@/assets/projects/platziMusic.png">
-              <h2 slot="title">Platzi Music</h2>
+              <strong slot="title">Platzi Music</strong>
             </p-project>
           </div>
           <button class="button is-large is-info is-rounded"> + </button>
@@ -137,7 +137,7 @@
           </h2>
           <div class="container pproyect">
             <div class="columns is-multiline">
-              <p-certific>
+              <p-certific href="https://platzi.com/@Jesuskinto/curso/1050-programacion-basica/diploma/detalle/">
                 <img slot="image" src="@/assets/certifics/cursoProgramacionBasica.png">
                 <h2 slot="title">Curso de Programación Basica</h2>
               </p-certific>
@@ -168,7 +168,10 @@
       </section>
       <section id="message" class="section">
         <div class="container">
-          <h1 class="title">La web es hermosa</h1>
+          <i class="title">La web es hermosa, </i>
+          <i class="subtitle">
+            Construyamos algo: <p-aleatory-text></p-aleatory-text>
+          </i>
         </div>
       </section>
       <section id="contact" class="section">
@@ -205,7 +208,10 @@
         </div>
       </section>
     </div>
-    <p-modal-project
+    <p-footer></p-footer>
+
+    <!-- Modales -->
+    <p-modal
       :activate="showModalCrediuno"
       @close="modalProject = null">
       <img slot="image" src="@/assets/projects/crediuno.png" alt="">
@@ -237,8 +243,8 @@
           <li>VeeValidate <progress class="progress is-success" value="10" max="100"></progress></li>
         </ol>
       </template>
-    </p-modal-project>
-    <p-footer></p-footer>
+    </p-modal>
+
   </div>
 </template>
 
@@ -248,8 +254,9 @@ import PTecnology from '@/components/Tecnology.vue'
 import PProject from '@/components/Project.vue'
 import PCertific from '@/components/Certific.vue'
 import PEmailBox from '@/components/EmailBox.vue'
-import PModalProject from '@/components/ModalProject.vue'
+import PModal from '@/components/shared/Modal.vue'
 import PFooter from '@/components/layout/Footer.vue'
+import PAleatoryText from '@/components/AleatoryText.vue'
 
 export default {
   name: 'app',
@@ -271,8 +278,9 @@ export default {
     PProject,
     PCertific,
     PEmailBox,
-    PModalProject,
-    PFooter
+    PModal,
+    PFooter,
+    PAleatoryText
   },
 
   mounted () {
@@ -349,9 +357,10 @@ export default {
 #message
   background-color: $grey-darker
   text-align: center
-  height: 60vh
-  .title
+  .title, .subtitle
     color: white
+  .container
+    padding: 100px 0
 
 #contact
   .social
