@@ -1,42 +1,46 @@
 <template>
   <div id="email-box">
-    <h2 class="subtitle"> Sent a email </h2>
+    <h2 class="subtitle"> {{$t('sent a email to')}}:
+      <span>
+        <input @click="copyInCLickboard" class="button" id="gmail" type="text" value="jesuskinto@gmail.com" readonly>
+      </span>
+    </h2>
     <div class="box" :class="{'box-is-sent': isSent }">
       <div v-show="!isSent">
         <form @submit.prevent="send">
           <div class="field">
-            <label class="label">Email</label>
+            <label class="label">{{$t('email')}}</label>
             <div class="control">
               <input
                 v-model="form.email"
-                class="input" type="email" placeholder="email" required>
+                class="input" type="email" :placeholder="$t('you_email.com')" required>
             </div>
           </div>
           <div class="field">
-            <label class="label">Subject</label>
+            <label class="label">{{$t('subject')}}</label>
             <div class="control">
               <input
                 v-model="form.subject"
                 class="input" type="text"
-                placeholder="Hi!, let's build something beautiful" required>
+                :placeholder="$t('hi_cracy')">
             </div>
           </div>
           <div class="field">
-            <label class="label">Message</label>
+            <label class="label">{{$t('message')}}</label>
             <div class="control">
               <textarea
                 v-model="form.message"
-                class="textarea" placeholder="Message...." required></textarea>
+                class="textarea" :placeholder="$t('message') + '....'" required></textarea>
             </div>
           </div>
           <button class="button" :class="{'is-loading is-warning': isSending}">
             <span class="icon"> 🛫 </span>
-            <span>Send</span>
+            <span>{{$t('send')}}</span>
           </button>
         </form>
       </div>
       <div class="sent-wrapper" v-show="isSent">
-        <p><strong>Gracias!</strong></p>
+        <p><strong>{{$t('thanks')}}!</strong></p>
       </div>
     </div>
   </div>
@@ -74,7 +78,7 @@ export default {
   methods: {
     send () {
       if (this.isSent) { return }
-
+      if (this.form.email == 'jesuskinto@gmail.com') { return }
       this.state = 'sending'
       setTimeout(() => {
         this.sent()
@@ -84,6 +88,13 @@ export default {
     sent () {
       this.state = 'sent'
       this.form = {}
+    },
+
+    copyInCLickboard () {
+      const copyText = document.getElementById('gmail')
+      copyText.select()
+      document.execCommand('copy')
+      alert('Copied the text: ' + copyText.value)
     }
   }
 }

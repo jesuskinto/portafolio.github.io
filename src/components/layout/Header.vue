@@ -7,17 +7,34 @@
             <a class="navbar-item">
               <span>JesusKinto</span>
             </a>
-            <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+            <span class="navbar-burger burger"
+              data-target="navbarMenuHeroB"
+              @click="showMenu = !showMenu">
               <span></span>
               <span></span>
               <span></span>
             </span>
           </div>
-          <div id="navbarMenuHeroB" class="navbar-menu">
+          <div id="navbarMenuHeroB" class="navbar-menu" :class="{'is-active': showMenu }">
             <div class="navbar-end">
-              <a class="navbar-item">
-                Lang
-              </a>
+              <div class="dropdown" :class="{'is-active': showLanguage}">
+                <a class="navbar-item" aria-haspopup="true"
+                  aria-controls="dropdown-menu" @click="showLanguage = !showLanguage">
+                  {{ $t('lang') }}
+                </a>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                  <div class="dropdown-content">
+                    <a @click="changeLang('es')" class="dropdown-item"
+                      :class="{'is-active': this.$i18n.locale == 'es'}">
+                      {{ $t('spanish') }}
+                    </a>
+                    <a @click="changeLang('en')" class="dropdown-item"
+                      :class="{'is-active': this.$i18n.locale == 'en'}">
+                      {{ $t('english') }}
+                    </a>
+                  </div>
+                </div>
+              </div>
               <span class="navbar-item">
                 <a href="https://github.com/jesuskinto" target="_blanck" class="button is-info is-inverted">
                   <span>Github</span>
@@ -58,25 +75,25 @@
               :class="{'is-active': isActive('tecnologies')}"
               v-scroll-to="{ el: '#tecnologies', offset: -50,}"
               @click="activate('tecnologies')">
-              <a>Tecnologies</a>
+              <a>{{$t('tecnologies')}}</a>
             </li>
             <li
-              :class="{'is-active': isActive('proyects')}"
-              v-scroll-to="'#proyects'"
-              @click="activate('proyects')">
-              <a>Proyects</a>
+              :class="{'is-active': isActive('projects')}"
+              v-scroll-to="'#projects'"
+              @click="activate('projects')">
+              <a>{{$t('projects')}}</a>
             </li>
             <li
               :class="{'is-active': isActive('certific')}"
               v-scroll-to="'#certific'"
               @click="activate('certific')">
-              <a>Certific</a>
+              <a>{{$t('certific')}}</a>
             </li>
             <li
               :class="{'is-active': isActive('contact')}"
               v-scroll-to="{ el: '#contact', offset: -50,}"
               @click="activate('contact')">
-              <a>Contact</a>
+                <a>{{$t('contact')}}</a>
             </li>
           </ul>
         </div>
@@ -90,7 +107,9 @@ export default {
   name: 'Header',
   data () {
     return {
-      active: 'tecnologies'
+      active: 'tecnologies',
+      showMenu: false,
+      showLanguage: false
     }
   },
   props: {
@@ -106,6 +125,10 @@ export default {
     },
     activate (nameSection) {
       this.active = nameSection
+    },
+    changeLang (lang) {
+      this.$i18n.locale = lang
+      this.showLanguage = false
     }
   },
   watch: {

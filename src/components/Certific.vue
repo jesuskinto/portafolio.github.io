@@ -1,5 +1,5 @@
 <template>
-  <a class="Proyect column is-3"
+  <a class="Proyect column is-6-mobile is-3-desktop"
     :href="href"
     target="_blank"
     data-aos="zoom-in">

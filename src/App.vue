@@ -54,7 +54,7 @@ export default {
   data () {
     return {
       $sticky: null,
-      $proyects: null,
+      $projects: null,
       $contact: null,
       $certific: null,
       activated: 'tecnoligies',
@@ -73,12 +73,12 @@ export default {
     window.addEventListener('scroll', this.handleScroll)
     const tabs = document.getElementById('tabs')
     const tecnologies = document.getElementById('tecnologies')
-    const proyects = document.getElementById('proyects')
+    const projects = document.getElementById('projects')
     const certific = document.getElementById('certific')
     const contact = document.getElementById('contact')
     this.$sticky = tabs.offsetTop
     this.$tecnologies = tecnologies.offsetTop
-    this.$proyects = proyects.offsetTop
+    this.$projects = projects.offsetTop
     this.$certific = certific.offsetTop
     this.$contact = contact.offsetTop
   },
@@ -97,10 +97,10 @@ export default {
           .classList.remove('sticky')
       }
 
-      if (this.inRange(this.$tecnologies, this.$proyects)) {
+      if (this.inRange(this.$tecnologies, this.$projects)) {
         this.activated = 'tecnologies'
-      } else if (this.inRange(this.$proyects, this.$certific)) {
-        this.activated = 'proyects'
+      } else if (this.inRange(this.$projects, this.$certific)) {
+        this.activated = 'projects'
       } else if (this.inRange(this.$certific, this.$contact)) {
         this.activated = 'certific'
       } else if (this.inRange(this.$contact)) {

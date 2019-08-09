@@ -1,19 +1,17 @@
 <template>
-  <div class="Proyect column is-6" data-aos="zoom-in">
+  <div class="Proyect" data-aos="zoom-in">
     <div class="box" @click="$emit('projectClicked')">
       <figure class="image is-3by2">
         <slot name="image"></slot>
       </figure>
       <div class="wrapper">
         <slot name= "title">
-          <h2>Titulo</h2>
+          <h1>Titulo</h1>
         </slot>
-        <slot name="parrafo">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            dolore magna aliqua. Ut enim ad minim...
-          </p>
-        </slot>
+        <div class="small">
+          <slot name="type"><p><strong>Type:</strong></p></slot>
+          <slot name="job"><p><strong>Cargo:</strong></p></slot>
+        </div>
       </div>
     </div>
   </div>
@@ -30,6 +28,13 @@ export default {
   padding: 0
   overflow: hidden
   cursor: pointer
+  margin: 10px
 .wrapper
   padding: 15px
+
+.small
+  color: gray
+  font-size: 13px
+  strong
+    color: gray
 </style>
