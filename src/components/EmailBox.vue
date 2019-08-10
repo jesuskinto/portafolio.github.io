@@ -78,7 +78,7 @@ export default {
   methods: {
     send () {
       if (this.isSent) { return }
-      if (this.form.email == 'jesuskinto@gmail.com') { return }
+      if (this.form.email === 'jesuskinto@gmail.com') { return }
       this.state = 'sending'
       setTimeout(() => {
         this.sent()
