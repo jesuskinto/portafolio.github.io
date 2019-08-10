@@ -30,10 +30,10 @@
         </a>
         <div class="or-line">
           <div><span>{{ $t('or')}}</span></div>
-          <hr>
+            <hr>
+          </div>
         </div>
-      </div>
-      <p-email-box></p-email-box>
+        <p-email-box></p-email-box>
     </div>
   </section>
 </template>
@@ -46,3 +46,8 @@ export default {
   }
 }
 </script>
+
+<style lang="sass">
+.button
+  font-weight: 600
+</style>

@@ -5,44 +5,46 @@
         <input @click="copyInCLickboard" class="button" id="gmail" type="text" value="jesuskinto@gmail.com" readonly>
       </span>
     </h2>
-    <div class="box" :class="{'box-is-sent': isSent }">
-      <div v-show="!isSent">
-        <form @submit.prevent="send">
-          <div class="field">
-            <label class="label">{{$t('email')}}</label>
-            <div class="control">
-              <input
-                v-model="form.email"
-                class="input" type="email" :placeholder="$t('you_email.com')" required>
+    <!--
+      <div class="box" :class="{'box-is-sent': isSent }">
+        <div v-show="!isSent">
+          <form @submit.prevent="send">
+            <div class="field">
+              <label class="label">{{$t('email')}}</label>
+              <div class="control">
+                <input
+                  v-model="form.email"
+                  class="input" type="email" :placeholder="$t('you_email.com')" required>
+              </div>
             </div>
-          </div>
-          <div class="field">
-            <label class="label">{{$t('subject')}}</label>
-            <div class="control">
-              <input
-                v-model="form.subject"
-                class="input" type="text"
-                :placeholder="$t('hi_cracy')">
+            <div class="field">
+              <label class="label">{{$t('subject')}}</label>
+              <div class="control">
+                <input
+                  v-model="form.subject"
+                  class="input" type="text"
+                  :placeholder="$t('hi_cracy')">
+              </div>
             </div>
-          </div>
-          <div class="field">
-            <label class="label">{{$t('message')}}</label>
-            <div class="control">
-              <textarea
-                v-model="form.message"
-                class="textarea" :placeholder="$t('message') + '....'" required></textarea>
+            <div class="field">
+              <label class="label">{{$t('message')}}</label>
+              <div class="control">
+                <textarea
+                  v-model="form.message"
+                  class="textarea" :placeholder="$t('message') + '....'" required></textarea>
+              </div>
             </div>
-          </div>
-          <button class="button" :class="{'is-loading is-warning': isSending}">
-            <span class="icon"> 🛫 </span>
-            <span>{{$t('send')}}</span>
-          </button>
-        </form>
+            <button class="button" :class="{'is-loading is-warning': isSending}">
+              <span class="icon"> 🛫 </span>
+              <span>{{$t('send')}}</span>
+            </button>
+          </form>
+        </div>
+        <div class="sent-wrapper" v-show="isSent">
+          <p><strong>{{$t('thanks')}}!</strong></p>
+        </div>
       </div>
-      <div class="sent-wrapper" v-show="isSent">
-        <p><strong>{{$t('thanks')}}!</strong></p>
-      </div>
-    </div>
+    -->
   </div>
 </template>
 
@@ -101,6 +103,8 @@ export default {
 </script>
 
 <style lang="sass">
+  #gmail
+    font-size: 12px
   #email-box
     max-width: 700px
     margin: 0 auto

@@ -36,7 +36,7 @@ export default {
   .wrapper-content
     padding: 20px
   .modal-list
-    margin-left: 15px
+    margin-left: 35px
   progress
     width: 150px
     float: right

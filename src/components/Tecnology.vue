@@ -41,19 +41,19 @@ export default {
     display: inline-block
     border-radius: 40px
     background-color: white
-    padding: 10px
-    width: 40px
-    height: 40px
+    padding: 5px
+    width: 35px
+    height: 35px
 
   p
     display: inline
     padding: 10px
     color: white
-    font-size: 20px
+    font-size: 15px
+    font-weight: 600
 
   progress
     margin-top: 5px
-    height: 0.4rem
-    border-radius: 0 0 15px 15px
+    height: 0.3rem
 
 </style>

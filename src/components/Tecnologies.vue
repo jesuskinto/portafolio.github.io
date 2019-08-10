@@ -3,8 +3,7 @@
     <div class="container">
       <h1 class="title">💡 {{ $t('tecnologies')}}</h1>
       <h2 class="subtitle">
-        A simple container to divide your page into
-        <strong>sections</strong>, like the one you're currently reading
+        Tecnologias con las que he trabajado y el <strong>Skill</strong> obtenido.
       </h2>
       <p-tecnology title="Vuejs" progress="80">
         <img slot="image" src="@/assets/tecnologies/vuejs.png">
@@ -36,7 +35,7 @@
       <p-tecnology  title="SASS" progress="40">
         <img slot="image" src="@/assets/tecnologies/sass.png">
       </p-tecnology>
-      <p-tecnology  title="HTML" progress="100">
+      <p-tecnology  title="HTML" progress="70">
         <img slot="image" src="@/assets/tecnologies/html.png">
       </p-tecnology>
       <p-tecnology  title="PUG" progress="100">
@@ -58,10 +57,10 @@
         <img slot="image" src="@/assets/tecnologies/git.png">
       </p-tecnology>
       <p-tecnology  title="Python" progress="60">
-        <img slot="image" src="@/assets/tecnologies/python.png">
+        <img slot="image" src="@/assets/tecnologies/python.jpeg">
       </p-tecnology>
       <p-tecnology  title="Django" progress="60">
-        <img slot="image" src="@/assets/tecnologies/django.jpg">
+        <img slot="image" src="@/assets/tecnologies/django.png">
       </p-tecnology>
       <p-tecnology  title="Django Rest Framework" progress="40">
         <img slot="image" src="@/assets/tecnologies/drf.png">

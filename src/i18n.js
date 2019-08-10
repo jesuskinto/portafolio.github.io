@@ -41,7 +41,15 @@ const messages = {
     'elegant': 'Elegant',
     'geek': 'Geek',
     'efficient': 'Efficient',
-    'nerd': 'Nerd'
+    'nerd': 'Nerd',
+    'made with': 'Made with',
+    'from': 'from',
+    'to the world': 'to the World',
+    'date': 'Date',
+    'job': 'Job',
+    'type': 'Type',
+    'present': 'Present'
+
   },
   es: {
     'spanish': 'Español',
@@ -80,7 +88,14 @@ const messages = {
     'elegant': 'Elegante',
     'geek': 'Friki',
     'efficient': 'Eficiente',
-    'nerd': 'Nerd'
+    'nerd': 'Nerd',
+    'made with': 'Hecho con',
+    'from': 'desde',
+    'to the world': 'para el Mundo',
+    'date': 'fecha',
+    'job': 'Cargo',
+    'type': 'Tipo',
+    'present': 'Actualidad'
   }
 }
 

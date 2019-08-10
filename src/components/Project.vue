@@ -9,8 +9,18 @@
           <h1>Titulo</h1>
         </slot>
         <div class="small">
-          <slot name="type"><p><strong>Type:</strong></p></slot>
-          <slot name="job"><p><strong>Cargo:</strong></p></slot>
+          <p>
+            <strong>{{$t('type')}}:</strong>
+            <slot name="type"></slot>
+          </p>
+          <p>
+            <strong>{{$t('job')}}:</strong>
+            <slot name="job"></slot>
+          </p>
+          <p>
+            <strong>{{$t('date')}}:</strong>
+            <slot name="date"></slot>
+          </p>
         </div>
       </div>
     </div>
@@ -37,4 +47,5 @@ export default {
   font-size: 13px
   strong
     color: gray
+    margin-right: 5px
 </style>

@@ -13,29 +13,37 @@
         <h1 class="title">Crediuno</h1>
         <h2 class="subtitle">Plataforma de solicitud de creditos</h2>
         <span>url: <a href="https://app.crediuno.com.ar/">https://app.crediuno.com.ar/</a></span>
+        <br>
+        <span>{{ $t('date')}}: oct-2018 - {{$t('present')}}</span>
         <hr>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Velit veniam dolore nisi error dolor maxime accusantium,
-          sed expedita, quo vero laboriosam eius consectetur animi
-          ad! Ad iusto a minus corrupti!
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Velit veniam dolore nisi error dolor maxime accusantium,
-          sed expedita, quo vero laboriosam eius consectetur animi
-          ad! Ad iusto a minus corrupti!
+          Plataforma de solicitud y gestion creditos que permite a clientes de la empresa
+          solicitar creditos con diferentes niveles de financiamiento; una vez la solicitud
+          es aprobada; el sistema permite gestionar los pagos hasta la finalización
+          del mismo.
         </p>
         <hr>
-        <h3 class="subtitle">Tecnologias usadas:</h3>
-        <ol class="modal-list">
-          <li>Django <progress class="progress is-success" value="60" max="100"></progress></li>
-          <li>Django Rest Framework <progress class="progress is-success" value="10" max="100"></progress></li>
-          <li>Mysql <progress class="progress is-success" value="30" max="100"></progress></li>
-          <li>Celery <progress class="progress is-success" value="30" max="100"></progress></li>
-          <li>Rabbitmq <progress class="progress is-success" value="30" max="100"></progress></li>
-          <li>Vuejs <progress class="progress is-success" value="60" max="100"></progress></li>
-          <li>Vue-Router <progress class="progress is-success" value="30" max="100"></progress></li>
-          <li>VeeValidate <progress class="progress is-success" value="10" max="100"></progress></li>
-        </ol>
+        <div class="columns">
+          <div class="column is-6">
+            <h3 class="subtitle">{{$t('tecnologies')}}:</h3>
+            <ol class="modal-list">
+              <li>Django</li>
+              <li>Django Rest Framework</li>
+              <li>Mysql</li>
+              <li>Celery</li>
+              <li>Rabbitmq</li>
+              <li>Vuejs</li>
+              <li>Vue-Router</li>
+              <li>VeeValidate</li>
+            </ol>
+          </div>
+          <div class="column is-6">
+            <h3 class="subtitle">{{$t('job')}}:</h3>
+            <ol class="modal-list">
+              <li>Full Stack Develop</li>
+            </ol>
+          </div>
+        </div>
       </template>
     </p-modal>
 

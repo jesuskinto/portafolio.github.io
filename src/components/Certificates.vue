@@ -3,8 +3,10 @@
     <div class="container">
       <h1 class="title">📁 {{ $t('certificates')}}</h1>
       <h2 class="subtitle">
-        A simple container to divide your page into
-        <strong>sections</strong>, like the one you're currently reading
+        En un mundo en constante crecimiento, la unica forma de
+        de avanzar es <i>"nunca parar de aprender"</i>.
+        <br>
+        Aca un listado cursos realizados en los ultimos años:
       </h2>
       <div class="container pproyect">
         <div class="columns is-multiline is-mobile">
@@ -22,7 +24,7 @@
           </p-certific>
           <p-certific href="https://platzi.com/@Jesuskinto/curso/1339-fundamentos-javascript/diploma/detalle/">
             <img slot="image" src="@/assets/certifics/cursoFundamentosDeJavascript.png">
-            <h2 slot="title">Curso de Fundamentos de Java...</h2>
+            <h2 slot="title">Curso de Fundamentos de Javascript</h2>
           </p-certific>
           <p-certific href="https://platzi.com/@Jesuskinto/curso/1111-vuejs/diploma/detalle/">
             <img slot="image" src="@/assets/certifics/cursoBasicoVuejs.png">
@@ -46,7 +48,7 @@
           </p-certific>
           <p-certific href="https://platzi.com/@Jesuskinto/curso/1608-aprender/diploma/detalle/">
             <img slot="image" src="@/assets/certifics/cursoAprenderEnLineaEfectivamente.png">
-            <h2 slot="title">Curso aprender en linea efec...</h2>
+            <h2 slot="title">Curso aprender en linea efectivamente</h2>
           </p-certific>
         </div>
       </div>

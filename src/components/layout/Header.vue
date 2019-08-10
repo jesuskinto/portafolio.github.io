@@ -57,12 +57,16 @@
           JesusKinto
         </p>
         <p class="subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <strong>potterFilia | platziFilia | codePhilia</strong>
+          <br>
+          Full Stack Developer | Ingenieria de Sistemas ULA VE | Estudiante de Platzi
+          <br>
+          Cuatro años de experiencia en la industria  TI, amante del sofware lejible y escalable
+          <br>
+          aprendiendo todos los dias
+          <br>
+          <br>
+          <strong>😎</strong> = <strong>🐍</strong>Python + <strong>🤖</strong>Javascript
         </p>
       </div>
     </div>
@@ -148,4 +152,8 @@ export default {
   border: solid 5px white
   border-radius: 150px
   overflow: hidden
+.title
+  margin-bottom: 35px
+.container a
+  font-weight: 600
 </style>
