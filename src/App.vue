@@ -6,6 +6,29 @@
 
     <!-- Modales -->
     <p-modal
+      :activate="showModal == 'lang'"
+      @close="showModal = null">
+      <template slot="content">
+        <h1 class="title">Choose a language:</h1>
+        <h2 class="subtitle">Elige un idioma:</h2>
+        <br>
+        <div class="columns button-langs">
+          <div class="column">
+            <button class="button is-info large"
+              @click="changeLang('en')">
+              English/Ingles
+            </button>
+          </div>
+          <div class="column">
+            <button class="button is-info large"
+              @click="changeLang('es')">
+              Spanish/Español
+            </button>
+          </div>
+        </div>
+      </template>
+    </p-modal>
+    <p-modal
       :activate="showModal == 'crediuno'"
       @close="showModal = null">
       <img slot="image" src="@/assets/projects/crediuno.png" alt="">
@@ -66,7 +89,7 @@ export default {
       $contact: null,
       $certific: null,
       activated: 'tecnoligies',
-      showModal: null
+      showModal: 'lang'
     }
   },
 
@@ -122,6 +145,10 @@ export default {
         return (position >= sectionStart && position < sectionEnd)
       }
       return (position >= sectionStart)
+    },
+    changeLang (lang) {
+      this.$i18n.locale = lang
+      this.showModal = null
     }
   }
 }
@@ -167,4 +194,7 @@ export default {
     span
       padding: 0 15px
       background: white
+
+.button-langs
+  text-align: center
 </style>

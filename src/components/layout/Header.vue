@@ -57,7 +57,7 @@
           JesusKinto
         </p>
         <p class="subtitle">
-          <strong>potterFilia | platziFilia | codePhilia</strong>
+          <strong>potterFilia | platziFilia | codeFilia</strong>
           <br>
           Full Stack Developer | Ingenieria de Sistemas ULA VE | Estudiante de Platzi
           <br>
