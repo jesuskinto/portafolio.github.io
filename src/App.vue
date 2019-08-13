@@ -11,7 +11,7 @@
 
 <script>
 import PHeader from '@/components/layout/Header.vue'
-const PContent = () => import('@/components/layout/Content.vue')
+import PContent from '@/components/layout/Content.vue'
 const PFooter = () => import('@/components/layout/Footer.vue')
 const PModals = () => import('@/components/Modals.vue')
 

@@ -1,10 +1,16 @@
 <template>
   <main>
-    <p-tecnologies></p-tecnologies>
+    <section id="tecnologies" class="section">
+      <p-tecnologies></p-tecnologies>
+    </section>
     <hr>
-    <p-projects @projectClicked="$emit('showModal', $event)"></p-projects>
+    <section id="projects" class="section">
+      <p-projects @projectClicked="$emit('showModal', $event)"></p-projects>
+    </section>
     <hr>
-    <p-certificates></p-certificates>
+    <section id="certific" class="section">
+      <p-certificates></p-certificates>
+    </section>
     <section id="message" class="section">
       <div class="container">
         <i class="title">{{$t('the web is beautiful')}}, </i>
@@ -13,16 +19,18 @@
         </i>
       </div>
     </section>
-    <p-contact></p-contact>
+    <section id="contact" class="section">
+      <p-contact></p-contact>
+    </section>
   </main>
 </template>
 
 <script>
-import PTecnologies from '@/components/Tecnologies.vue'
-import PProjects from '@/components/Projects.vue'
-import PCertificates from '@/components/Certificates.vue'
-import PDinamicText from '@/components/DinamicText.vue'
-import PContact from '@/components/Contact.vue'
+const PTecnologies = () => import('@/components/Tecnologies.vue')
+const PProjects = () => import('@/components/Projects.vue')
+const PCertificates = () => import('@/components/Certificates.vue')
+const PDinamicText = () => import('@/components/DinamicText.vue')
+const PContact = () => import('@/components/Contact.vue')
 
 export default {
   components: {

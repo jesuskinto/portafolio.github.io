@@ -1,5 +1,5 @@
 <template>
-  <section id="projects" class="section">
+  <div>
     <div class="container">
       <h1 class="title">📚 {{ $t('projects')}}</h1>
       <h2 class="subtitle">
@@ -95,7 +95,7 @@
         </i>
       </p>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
