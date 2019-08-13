@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueScrollTo from 'vue-scrollto'
-import VueCarousel from 'vue-carousel'
 import i18n from './i18n'
 import AOS from 'aos'
 import App from './App.vue'
@@ -8,7 +7,6 @@ import App from './App.vue'
 import 'aos/dist/aos.css'
 
 Vue.config.productionTip = false
-Vue.use(VueCarousel)
 Vue.use(VueScrollTo, {
   offset: -85,
   mirror: true

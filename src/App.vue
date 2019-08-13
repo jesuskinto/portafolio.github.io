@@ -5,79 +5,15 @@
     <p-footer></p-footer>
 
     <!-- Modales -->
-    <p-modal
-      :activate="showModal == 'lang'"
-      @close="showModal = null">
-      <template slot="content">
-        <h1 class="title">Choose a language:</h1>
-        <h2 class="subtitle">Elige un idioma:</h2>
-        <br>
-        <div class="columns button-langs">
-          <div class="column">
-            <button class="button is-info large"
-              @click="changeLang('en')">
-              English/Ingles
-            </button>
-          </div>
-          <div class="column">
-            <button class="button is-info large"
-              @click="changeLang('es')">
-              Spanish/Español
-            </button>
-          </div>
-        </div>
-      </template>
-    </p-modal>
-    <p-modal
-      :activate="showModal == 'crediuno'"
-      @close="showModal = null">
-      <img slot="image" src="@/assets/projects/crediuno.png" alt="">
-      <template slot="content">
-        <h1 class="title">Crediuno</h1>
-        <h2 class="subtitle">Plataforma de solicitud de creditos</h2>
-        <span>url: <a href="https://app.crediuno.com.ar/">https://app.crediuno.com.ar/</a></span>
-        <br>
-        <span>{{ $t('date')}}: oct-2018 - {{$t('present')}}</span>
-        <hr>
-        <p>
-          Plataforma de solicitud y gestion creditos que permite a clientes de la empresa
-          solicitar creditos con diferentes niveles de financiamiento; una vez la solicitud
-          es aprobada; el sistema permite gestionar los pagos hasta la finalización
-          del mismo.
-        </p>
-        <hr>
-        <div class="columns">
-          <div class="column is-6">
-            <h3 class="subtitle">{{$t('tecnologies')}}:</h3>
-            <ol class="modal-list">
-              <li>Django</li>
-              <li>Django Rest Framework</li>
-              <li>Mysql</li>
-              <li>Celery</li>
-              <li>Rabbitmq</li>
-              <li>Vuejs</li>
-              <li>Vue-Router</li>
-              <li>VeeValidate</li>
-            </ol>
-          </div>
-          <div class="column is-6">
-            <h3 class="subtitle">{{$t('job')}}:</h3>
-            <ol class="modal-list">
-              <li>Full Stack Develop</li>
-            </ol>
-          </div>
-        </div>
-      </template>
-    </p-modal>
-
+    <p-modals :showModal="showModal" @close="showModal = null"></p-modals>
   </div>
 </template>
 
 <script>
 import PHeader from '@/components/layout/Header.vue'
-import PContent from '@/components/layout/Content.vue'
-import PFooter from '@/components/layout/Footer.vue'
-import PModal from '@/components/shared/Modal.vue'
+const PContent = () => import('@/components/layout/Content.vue')
+const PFooter = () => import('@/components/layout/Footer.vue')
+const PModals = () => import('@/components/Modals.vue')
 
 export default {
   name: 'app',
@@ -95,7 +31,7 @@ export default {
 
   components: {
     PHeader,
-    PModal,
+    PModals,
     PFooter,
     PContent
   },
