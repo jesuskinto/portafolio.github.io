@@ -61,7 +61,7 @@
           <br>
           Full Stack Developer | Ingenieria de Sistemas ULA VE | Estudiante de Platzi
           <br>
-          Cuatro años de experiencia en la industria  TI, amante del sofware lejible y escalable
+          Cuatro años de experiencia en la industria  TI, en <strong>pro</strong> del sofware lejible y escalable
           <br>
           aprendiendo todos los dias
           <br>
