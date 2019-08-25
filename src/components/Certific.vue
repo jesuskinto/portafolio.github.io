@@ -18,8 +18,7 @@
 
 <script>
 export default {
-  props: ['href'],
-  name: 'Proyect'
+  props: ['href']
 }
 </script>
 

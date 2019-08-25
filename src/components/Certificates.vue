@@ -49,6 +49,10 @@
           <img slot="image" src="@/assets/certifics/cursoAprenderEnLineaEfectivamente.png">
           <h2 slot="title">Curso aprender en linea efectivamente</h2>
         </p-certific>
+        <p-certific href="https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/">
+          <img slot="image" src="@/assets/certifics/cursoProfesionalGitGithub.png">
+          <h2 slot="title">Curso Profesional de git y github</h2>
+        </p-certific>
       </div>
     </div>
   </div>
