@@ -1,10 +1,9 @@
 <template>
-  <div class="tecnology" data-aos="zoom-in-left">
+  <div class="tecnology" data-aos="zoom-in">
     <figure>
       <slot name="image"></slot>
     </figure>
     <p>{{title}}</p>
-    <progress class="progress is-success" :value="progress" max="100"></progress>
   </div>
 </template>
 
@@ -16,10 +15,6 @@ export default {
       required: true,
       type: String,
       default: 'Title'
-    },
-    progress: {
-      required: true,
-      type: String
     }
   }
 }
@@ -32,7 +27,6 @@ export default {
   display: inline-block
   cursor: pointer
   background-color: $grey-light
-  border-radius: 15px 15px 8px 8px
   overflow: hidden
   padding: 10px
   margin: 10px
@@ -44,6 +38,7 @@ export default {
     padding: 5px
     width: 35px
     height: 35px
+    overflow: hidden
 
   p
     display: inline

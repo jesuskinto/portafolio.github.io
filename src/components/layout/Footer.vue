@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        {{$t('made with')}} <strong class="heart">💙</strong> {{ $t('from') }} <strong>Venezuela</strong> {{ $t('to the world') }}!
+        {{$t('made with')}} <strong class="heart">💙</strong> {{ $t('to the world') }}!
       </p>
       <span>;)</span>
     </div>

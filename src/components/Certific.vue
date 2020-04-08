@@ -1,8 +1,7 @@
 <template>
   <a class="Proyect column is-6-mobile is-3-desktop"
     :href="href"
-    target="_blank"
-    data-aos="zoom-in">
+    target="_blank">
     <div class="box">
       <figure image is-3by2>
         <slot name="image"></slot>

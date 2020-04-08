@@ -1,5 +1,5 @@
 <template>
-  <header class="hero is-info is-medium is-bold">
+  <header class="hero is-info is-small">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
@@ -50,7 +50,7 @@
       <div class="container has-text-centered">
         <div class="wrapper-image">
           <figure class="image is-1by1">
-            <img src="@/assets/avatar.jpg">
+            <img src="@/assets/avatar.jpeg">
           </figure>
         </div>
         <p class="title">
@@ -72,12 +72,12 @@
     </div>
 
     <div id="tabs" class="hero-foot">
-      <nav class="tabs is-boxed is-fullwidth">
+      <nav class="tabs">
         <div class="container">
           <ul>
             <li
               :class="{'is-active': isActive('tecnologies')}"
-              v-scroll-to="{ el: '#tecnologies', offset: -50,}"
+              v-scroll-to="{ el: '#tecnologies'}"
               @click="activate('tecnologies')">
               <a>{{$t('tecnologies')}}</a>
             </li>
@@ -88,6 +88,12 @@
               <a>{{$t('projects')}}</a>
             </li>
             <li
+              :class="{'is-active': isActive('challenges')}"
+              v-scroll-to="'#challenges'"
+              @click="activate('challenges')">
+              <a>{{$t('challenges')}}</a>
+            </li>
+            <li
               :class="{'is-active': isActive('certific')}"
               v-scroll-to="'#certific'"
               @click="activate('certific')">
@@ -95,7 +101,7 @@
             </li>
             <li
               :class="{'is-active': isActive('contact')}"
-              v-scroll-to="{ el: '#contact', offset: -50,}"
+              v-scroll-to="{ el: '#contact'}"
               @click="activate('contact')">
                 <a>{{$t('contact')}}</a>
             </li>
@@ -103,6 +109,7 @@
         </div>
       </nav>
     </div>
+    <div class="line"></div>
   </header>
 </template>
 
@@ -132,6 +139,7 @@ export default {
     },
     changeLang (lang) {
       this.$i18n.locale = lang
+      localStorage.setItem('lang', lang)
       this.showLanguage = false
     }
   },
@@ -146,14 +154,26 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+header
+  margin-bottom: 90px
 .wrapper-image
   display: inline-block
   width: 200px
-  border: solid 5px white
   border-radius: 150px
   overflow: hidden
 .title
   margin-bottom: 35px
 .container a
   font-weight: 600
+
+.line
+  height: 80px
+  width: 130%
+  background: #209cee
+  -webkit-transform: rotate(-2deg)
+  transform: rotate(-2deg)
+  position: absolute
+  z-index: -1
+  bottom: 85px
+  left: -14px
 </style>

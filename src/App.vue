@@ -25,7 +25,7 @@ export default {
       $contact: null,
       $certific: null,
       activated: 'tecnoligies',
-      showModal: 'lang'
+      showModal: null
     }
   },
 
@@ -37,6 +37,7 @@ export default {
   },
 
   mounted () {
+    this.setLang()
     window.addEventListener('scroll', this.handleScroll)
     const tabs = document.getElementById('tabs')
     const tecnologies = document.getElementById('tecnologies')
@@ -83,8 +84,13 @@ export default {
       return (position >= sectionStart)
     },
     changeLang (lang) {
+      localStorage.getItem('lang')
       this.$i18n.locale = lang
-      this.showModal = null
+    },
+    setLang () {
+      const lang = localStorage.getItem('lang')
+      if (lang) this.changeLang(lang)
+      else this.showModal = 'lang'
     }
   }
 }
@@ -99,7 +105,6 @@ export default {
   position: fixed
   width: 100%
   background-color: $info
-  padding-top: 20px
   z-index: 1
 
 .pproyect

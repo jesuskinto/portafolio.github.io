@@ -359,6 +359,7 @@ export default {
     },
     changeLang (lang) {
       this.$i18n.locale = lang
+      localStorage.setItem('lang', lang)
       this.closeModal()
     }
   }

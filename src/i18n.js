@@ -48,8 +48,9 @@ const messages = {
     'date': 'Date',
     'job': 'Job',
     'type': 'Type',
-    'present': 'Present'
-
+    'present': 'Present',
+    'challenges': 'Challenges',
+    'all': 'All'
   },
   es: {
     'spanish': 'Español',
@@ -95,7 +96,9 @@ const messages = {
     'date': 'fecha',
     'job': 'Cargo',
     'type': 'Tipo',
-    'present': 'Actualidad'
+    'present': 'Actualidad',
+    'challenges': 'Restos',
+    'all': 'Todos'
   }
 }
 
