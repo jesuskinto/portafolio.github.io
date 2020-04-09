@@ -31,6 +31,10 @@
         href="https://api.whatsapp.com/send?phone=584263758831" target="_blank">
         <span>Whastapp</span>
       </a>
+      <a class="button codepen"
+        href="https://codepen.io/jesuskinto/" target="_blank">
+        <span>CodePen</span>
+      </a>
       <div class="or-line">
         <div><span>{{ $t('or')}}</span></div>
           <hr>

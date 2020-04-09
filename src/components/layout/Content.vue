@@ -11,6 +11,10 @@
     <section id="certific" class="section">
       <p-certificates></p-certificates>
     </section>
+    <section id="challenges" class="section">
+      <div class="line top"></div>
+      <p-challenges></p-challenges>
+    </section>
     <section id="message" class="section">
       <div class="line top"></div>
       <div class="container">
@@ -31,6 +35,7 @@
 const PTecnologies = () => import('@/components/Tecnologies.vue')
 const PProjects = () => import('@/components/Projects.vue')
 const PCertificates = () => import('@/components/Certificates.vue')
+const PChallenges = () => import('@/components/Challenges.vue')
 const PDinamicText = () => import('@/components/DinamicText.vue')
 const PContact = () => import('@/components/Contact.vue')
 
@@ -39,6 +44,7 @@ export default {
     PTecnologies,
     PProjects,
     PCertificates,
+    PChallenges,
     PDinamicText,
     PContact
   }
@@ -71,6 +77,9 @@ export default {
 .whatsapp
   background: #1ebea5 !important
 
+.codepen
+  background: #24282E !important
+
 #gmail
   background: #E43426 !important
   color: white !important
@@ -97,6 +106,23 @@ export default {
 #certific
   padding-top: 150px
 
+#challenges
+  background-color: #7c7c7c
+  position: relative
+  .line
+    height: 80px
+    width: 130%
+    background: #7c7c7c
+    position: absolute
+    z-index: -1
+    left: -14px
+
+  .top
+    top: -78px
+    height: 180px
+    transform: rotate(2deg)
+    z-index: 1
+
 #message
   position: relative
   .line
@@ -112,6 +138,7 @@ export default {
     height: 180px
     -webkit-transform: rotate(-4deg)
     transform: rotate(-3deg)
+    z-index: 1
 
   .top
     bottom: 85px

@@ -57,16 +57,16 @@
           JesusKinto
         </p>
         <p class="subtitle">
-          <strong>potterFilia | platziFilia | codeFilia</strong>
+          <strong>potterFilia | Javacript FullStack | Python FullStack | codeFilia</strong>
           <br>
           Full Stack Developer | Ingenieria de Sistemas ULA VE | Estudiante de Platzi
           <br>
-          Cuatro años de experiencia en la industria  TI, en <strong>pro</strong> del sofware lejible y escalable
-          <br>
-          aprendiendo todos los dias
+          Cuatro años de experiencia en la industria  TI, en <strong>pro</strong> del sofware lejible y escalable.
           <br>
           <br>
           <strong>😎</strong> = <strong>🐍</strong>Python + <strong>🤖</strong>Javascript
+          <br>
+          <br>
         </p>
       </div>
     </div>
@@ -88,16 +88,16 @@
               <a>{{$t('projects')}}</a>
             </li>
             <li
-              :class="{'is-active': isActive('challenges')}"
-              v-scroll-to="'#challenges'"
-              @click="activate('challenges')">
-              <a>{{$t('challenges')}}</a>
-            </li>
-            <li
               :class="{'is-active': isActive('certific')}"
               v-scroll-to="'#certific'"
               @click="activate('certific')">
               <a>{{$t('certific')}}</a>
+            </li>
+            <li
+              :class="{'is-active': isActive('challenges')}"
+              v-scroll-to="'#challenges'"
+              @click="activate('challenges')">
+              <a>{{$t('challenges')}}</a>
             </li>
             <li
               :class="{'is-active': isActive('contact')}"
@@ -170,7 +170,7 @@ header
   height: 80px
   width: 130%
   background: #209cee
-  -webkit-transform: rotate(-2deg)
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
   transform: rotate(-2deg)
   position: absolute
   z-index: -1

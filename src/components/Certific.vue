@@ -8,7 +8,7 @@
       </figure>
       <div class="wrapper">
         <slot name= "title">
-          <h2>Titulo</h2>
+          <h1>Titulo</h1>
         </slot>
       </div>
     </div>
