@@ -1,5 +1,5 @@
 <template>
-  <header class="hero is-info is-small">
+  <header class="hero is-warning is-small">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
@@ -71,7 +71,7 @@
       </div>
     </div>
 
-    <div id="tabs" class="hero-foot">
+    <div id="tabs" class="hero-foot hero is-warning">
       <nav class="tabs">
         <div class="container">
           <ul>
@@ -108,8 +108,8 @@
           </ul>
         </div>
       </nav>
+      <div class="line hero is-warning"></div>
     </div>
-    <div class="line"></div>
   </header>
 </template>
 
@@ -157,6 +157,12 @@ export default {
 header
   margin-bottom: 90px
   position: relative
+
+.tabs
+  position: absolute
+  left: 113px
+  bottom: -72px
+
 .wrapper-image
   display: inline-block
   width: 200px
@@ -169,12 +175,9 @@ header
 
 .line
   height: 80px
-  width: 130%
-  background: #209cee
-  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
-  transform: rotate(-2deg)
+  width: 100%
+  transform: rotate(-1deg)
   position: absolute
   z-index: -1
-  bottom: -17px
-  left: -14px
+  bottom: -50px
 </style>
