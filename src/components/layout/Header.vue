@@ -156,6 +156,7 @@ export default {
 <style lang="sass" scoped>
 header
   margin-bottom: 90px
+  position: relative
 .wrapper-image
   display: inline-block
   width: 200px
@@ -174,6 +175,6 @@ header
   transform: rotate(-2deg)
   position: absolute
   z-index: -1
-  bottom: 85px
+  bottom: -17px
   left: -14px
 </style>

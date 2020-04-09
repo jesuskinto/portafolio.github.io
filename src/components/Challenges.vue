@@ -9,7 +9,7 @@
         <iframe
           scrolling="no"
           title="Clock"
-          src="https://codepen.io/jesuskinto/embed/LYpYYXO?height=265&theme-id=light&default-tab=css,result"
+          src="https://codepen.io/jesuskinto/embed/LYpYYXO?height=265&theme-id=light"
           frameborder="no"
           allowtransparency="true"
           allowfullscreen="true">
@@ -20,7 +20,7 @@
       <div class="column">
       <iframe scrolling="no"
         title="xxwxxoX"
-        src="https://codepen.io/jesuskinto/embed/xxwxxoX?height=265&theme-id=light&default-tab=css,result"
+        src="https://codepen.io/jesuskinto/embed/xxwxxoX?height=265&theme-id=light"
         frameborder="no"
         allowtransparency="true"
         allowfullscreen="true">
