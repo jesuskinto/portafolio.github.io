@@ -159,10 +159,10 @@ header
   position: relative
 
 .tabs
-  bottom: -7px
+  bottom: -10px
   position: relative
   margin-bottom: 0 !important
-  
+
 .wrapper-image
   display: inline-block
   width: 200px
@@ -175,9 +175,10 @@ header
 
 .line
   height: 80px
-  width: 100%
+  width: 110%
   transform: rotate(-1deg)
   position: absolute
   z-index: -1
+  left: -2px
   bottom: -12px
 </style>
