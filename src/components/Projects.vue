@@ -82,7 +82,7 @@
       </carousel>
       <p>
         {{ $t('products-message')}}
-        <strong> 
+        <strong>
           {{ $t('products-lema')}}
         </strong>
       </p>
