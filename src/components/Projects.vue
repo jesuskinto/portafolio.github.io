@@ -2,9 +2,6 @@
   <div>
     <div class="container">
       <h1 class="title">📚 {{ $t('projects')}}</h1>
-      <h2 class="subtitle">
-        Sientete libre de recorrerlos. <strong>Toda sugerencia es bienvenida</strong>:
-      </h2>
     </div>
     <div class="container pproyect">
       <carousel
@@ -84,15 +81,10 @@
         </slide>
       </carousel>
       <p>
-        Creo fielmente que un buen desarrollador debe
-        dedicar tiempo a proyectos personales,
-        a crecer cada dia con desafios,
-        a refactorizar su codigo,
-        a dejar volar su imaginacion.
-        <i>
-          "Un buen programador no nace;
-          se construye dia a dia con su propio codigo".
-        </i>
+        {{ $t('products-message')}}
+        <strong> 
+          {{ $t('products-lema')}}
+        </strong>
       </p>
     </div>
   </div>

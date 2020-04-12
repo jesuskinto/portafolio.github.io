@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">📚 {{ $t('challenges')}}</h1>
     <h2 class="subtitle">
-      Como todo <strong>Get</strong>, siempre hay tiempo para jugar:
+      {{ $t('challenges-message')}}
     </h2>
     <div class="columns">
       <div class="column">
@@ -12,26 +12,35 @@
           src="https://codepen.io/jesuskinto/embed/LYpYYXO?height=265&theme-id=light"
           frameborder="no"
           allowtransparency="true"
-          allowfullscreen="true">
-            See the Pen <a href='https://codepen.io/jesuskinto/pen/LYpYYXO'>Clock</a> by Quinto Jesús
-            (<a href='https://codepen.io/jesuskinto'>@jesuskinto</a>) on <a href='https://codepen.io'>CodePen</a>.
-      </iframe>
+          allowfullscreen="true"
+        >
+          See the Pen
+          <a href="https://codepen.io/jesuskinto/pen/LYpYYXO">Clock</a> by Quinto Jesús
+          (
+          <a href="https://codepen.io/jesuskinto">@jesuskinto</a>) on
+          <a href="https://codepen.io">CodePen</a>.
+        </iframe>
       </div>
       <div class="column">
-      <iframe scrolling="no"
-        title="xxwxxoX"
-        src="https://codepen.io/jesuskinto/embed/xxwxxoX?height=265&theme-id=light"
-        frameborder="no"
-        allowtransparency="true"
-        allowfullscreen="true">
-        See the Pen <a href='https://codepen.io/jesuskinto/pen/xxwxxoX'>xxwxxoX</a> by Quinto Jesús
-        (<a href='https://codepen.io/jesuskinto'>@jesuskinto</a>) on <a href='https://codepen.io'>CodePen</a>.
-      </iframe>
+        <iframe
+          scrolling="no"
+          title="Sliders"
+          src="https://codepen.io/jesuskinto/embed/gOapmMj?height=265&theme-id=light"
+          frameborder="no"
+          allowtransparency="true"
+          allowfullscreen="true"
+          loading="lazy"
+        >
+          See the Pen
+          <a href="https://codepen.io/jesuskinto/pen/gOapmMj">Sliders</a> by Quinto Jesús
+          (
+          <a href="https://codepen.io/jesuskinto">@jesuskinto</a>) on
+          <a href="https://codepen.io">CodePen</a>.
+        </iframe>
       </div>
     </div>
     <div class="button-wrapper">
-      <a class="button more"
-        href="https://codepen.io/jesuskinto/" target="_blank">
+      <a class="button more" href="https://codepen.io/jesuskinto/" target="_blank">
         <span>Ver Mas</span>
       </a>
     </div>

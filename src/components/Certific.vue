@@ -6,11 +6,6 @@
       <figure image is-3by2>
         <slot name="image"></slot>
       </figure>
-      <div class="wrapper">
-        <slot name= "title">
-          <h1>Titulo</h1>
-        </slot>
-      </div>
     </div>
   </a>
 </template>
@@ -26,6 +21,7 @@ export default {
   padding: 0
   overflow: hidden
   cursor: pointer
+  z-index: 3
 .wrapper
   padding: 15px
 </style>

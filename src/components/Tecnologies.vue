@@ -1,9 +1,6 @@
 <template>
   <div class="container">
     <h1 class="title">💡 {{ $t('tecnologies')}}</h1>
-    <h2 class="subtitle">
-      Tecnologias con las que he trabajado.
-    </h2>
     <div class="sid">
       <p-tecnology title="Vuejs">
         <img slot="image" src="@/assets/tecnologies/vuejs.png">

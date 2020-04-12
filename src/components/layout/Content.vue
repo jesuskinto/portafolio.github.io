@@ -18,10 +18,10 @@
     <section id="message" class="section">
       <div class="line top"></div>
       <div class="container">
-        <i class="title">{{$t('the web is beautiful')}}, </i>
-        <i class="subtitle">
+        <span class="title">{{$t('the web is beautiful')}}, </span>
+        <span class="subtitle">
           {{$t('let\'s build something')}}: <p-dinamic-text></p-dinamic-text>
-        </i>
+        </span>
       </div>
       <div class="line bottom"></div>
     </section>
@@ -57,10 +57,10 @@ export default {
   margin-bottom: 15px
 
 .twitter
-  background: #4486F7 !important
+  background: #1da1f2 !important
 
 .facebook
-  background: #5545B6 !important
+  background: #3578E5 !important
 
 .linkedin
   background: #293B4B !important
@@ -121,7 +121,6 @@ export default {
     top: -78px
     height: 180px
     transform: rotate(2deg)
-    z-index: 1
 
 #message
   position: relative
