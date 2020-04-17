@@ -4,12 +4,12 @@
     <h2 class="subtitle">
       {{ $t('challenges-message')}}
     </h2>
-    <div class="columns">
-      <div class="column">
+    <div class="columns is-multiline">
+      <div class="column is-6">
         <iframe
           scrolling="no"
           title="Clock"
-          src="https://codepen.io/jesuskinto/embed/LYpYYXO?height=265&theme-id=light"
+          src="https://codepen.io/jesuskinto/embed/preview/LYpYYXO?height=265&theme-id=light"
           frameborder="no"
           allowtransparency="true"
           allowfullscreen="true"
@@ -21,11 +21,11 @@
           <a href="https://codepen.io">CodePen</a>.
         </iframe>
       </div>
-      <div class="column">
+      <div class="column is-6">
         <iframe
           scrolling="no"
           title="Sliders"
-          src="https://codepen.io/jesuskinto/embed/gOapmMj?height=265&theme-id=light"
+          src="https://codepen.io/jesuskinto/embed/preview/gOapmMj?height=265&theme-id=light"
           frameborder="no"
           allowtransparency="true"
           allowfullscreen="true"
@@ -36,6 +36,19 @@
           (
           <a href="https://codepen.io/jesuskinto">@jesuskinto</a>) on
           <a href="https://codepen.io">CodePen</a>.
+        </iframe>
+      </div>
+      <div class="column is-6">
+        <iframe
+          scrolling="no"
+          title="Calculator"
+          src="https://codepen.io/jesuskinto/embed/preview/wvKGrwE?height=265&theme-id=light&default-tab=result"
+          frameborder="no"
+          allowtransparency="true"
+          allowfullscreen="true"
+          loading="lazy">
+            See the Pen <a href='https://codepen.io/jesuskinto/pen/wvKGrwE'>Calculator</a> by Quinto Jesús
+            (<a href='https://codepen.io/jesuskinto'>@jesuskinto</a>) on <a href='https://codepen.io'>CodePen</a>.
         </iframe>
       </div>
     </div>
