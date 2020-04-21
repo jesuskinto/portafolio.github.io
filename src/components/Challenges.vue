@@ -1,9 +1,7 @@
 <template>
   <div class="container">
     <h1 class="title">📚 {{ $t('challenges')}}</h1>
-    <h2 class="subtitle">
-      {{ $t('challenges-message')}}
-    </h2>
+    <h2 class="subtitle">{{ $t('challenges-message')}}</h2>
     <div class="columns is-multiline">
       <div class="column is-6">
         <iframe
@@ -46,9 +44,32 @@
           frameborder="no"
           allowtransparency="true"
           allowfullscreen="true"
-          loading="lazy">
-            See the Pen <a href='https://codepen.io/jesuskinto/pen/wvKGrwE'>Calculator</a> by Quinto Jesús
-            (<a href='https://codepen.io/jesuskinto'>@jesuskinto</a>) on <a href='https://codepen.io'>CodePen</a>.
+          loading="lazy"
+        >
+          See the Pen
+          <a href="https://codepen.io/jesuskinto/pen/wvKGrwE">Calculator</a> by Quinto Jesús
+          (
+          <a href="https://codepen.io/jesuskinto">@jesuskinto</a>) on
+          <a href="https://codepen.io">CodePen</a>.
+        </iframe>
+      </div>
+      <div class="column is-6">
+        <iframe
+          scrolling="no"
+          title="Complex background patterns (CSS SECRETS)"
+          src="https://codepen.io/jesuskinto/embed/preview/eYpBZvX?height=265&theme-id=light&default-tab=result"
+          frameborder="no"
+          allowtransparency="true"
+          allowfullscreen="true"
+          loading="lazy"
+        >
+          See the Pen
+          <a
+            href="https://codepen.io/jesuskinto/pen/eYpBZvX"
+          >Complex background patterns (CSS SECRETS)</a> by Quinto Jesús
+          (
+          <a href="https://codepen.io/jesuskinto">@jesuskinto</a>) on
+          <a href="https://codepen.io">CodePen</a>.
         </iframe>
       </div>
     </div>
