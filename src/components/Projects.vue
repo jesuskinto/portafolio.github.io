@@ -36,7 +36,7 @@ export default {
     Carousel,
     Slide
   },
-  data() {
+  data () {
     return {
       projects: [
         {

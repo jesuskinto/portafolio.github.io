@@ -34,107 +34,107 @@ export default {
       certifics: [
         {
           tags: ['js'],
-          href:'https://platzi.com/@Jesuskinto/curso/1050-programacion-basica/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1050-programacion-basica/diploma/detalle/',
           src: require('@/assets/certifics/cursoProgramacionBasica.png')
         },
         {
           tags: ['all'],
-          href:'https://platzi.com/@Jesuskinto/curso/1220-marca-personal/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1220-marca-personal/diploma/detalle/',
           src: require('@/assets/certifics/cursoMarcaPersonal.png')
         },
         {
           tags: ['all'],
-          href:'https://platzi.com/@Jesuskinto/curso/1350-html5-css3/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1350-html5-css3/diploma/detalle/',
           src: require('@/assets/certifics/cursoDesarrolloWebOnline.png')
         },
         {
           tags: ['js', 'vue'],
-          href:'https://platzi.com/@Jesuskinto/curso/1111-vuejs/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1111-vuejs/diploma/detalle/',
           src: require('@/assets/certifics/cursoBasicoVuejs.png')
         },
         {
           tags: ['js', 'vue'],
-          href:'https://platzi.com/@Jesuskinto/curso/1145-vuejs-profesional/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1145-vuejs-profesional/diploma/detalle/',
           src: require('@/assets/certifics/cursoProfesionalVuejs.png')
         },
         {
           tags: ['js', 'vue'],
-          href:'https://platzi.com/@Jesuskinto/carrera/98-vue/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/carrera/98-vue/diploma/detalle/',
           src: require('@/assets/certifics/carreraVuejs.png')
         },
         {
           tags: ['back', 'python'],
-          href:'https://platzi.com/@Jesuskinto/curso/1104-python-basico/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1104-python-basico/diploma/detalle/',
           src: require('@/assets/certifics/cursoPython.png')
         },
         {
           tags: ['back', 'python'],
-          href:'https://platzi.com/@Jesuskinto/curso/1378-python/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1378-python/diploma/detalle/',
           src: require('@/assets/certifics/cursoPython2.png')
         },
         {
           tags: ['front'],
-          href:'https://platzi.com/@Jesuskinto/curso/1608-aprender/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1608-aprender/diploma/detalle/',
           src: require('@/assets/certifics/cursoAprenderEnLineaEfectivamente.png')
         },
         {
           tags: ['back'],
-          href:'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
           src: require('@/assets/certifics/cursoProfesionalGitGithub.png')
         },
         {
           tags: ['js'],
-          href:'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
           src: require('@/assets/certifics/cursoClousureAndScope.png')
         },
         {
           tags: ['js'],
-          href:'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
           src: require('@/assets/certifics/cursoV8.png')
         },
         {
           tags: ['js'],
-          href:'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
           src: require('@/assets/certifics/cursoRouter.png')
         },
         {
           tags: ['js'],
-          href:'https://platzi.com/@Jesuskinto/curso/1339-fundamentos-javascript/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1339-fundamentos-javascript/diploma/detalle/',
           src: require('@/assets/certifics/cursoFundamentosDeJavascript.png')
         },
         {
           tags: ['js'],
-          href:'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
           src: require('@/assets/certifics/cursoFrontendDeveloper.png')
         },
         {
           tags: ['js'],
-          href:'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
           src: require('@/assets/certifics/cursoPreworking.png')
         },
         {
           tags: ['js'],
-          href:'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
           src: require('@/assets/certifics/cursoProfesionalJavascript.png')
         },
         {
           tags: ['js'],
-          href:'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
           src: require('@/assets/certifics/cursoEMA6.png')
         },
         {
           tags: ['js', 'back'],
-          href:'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
           src: require('@/assets/certifics/cursoNode.png')
         },
         {
           tags: ['js', 'react'],
-          href:'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
           src: require('@/assets/certifics/cursoReact.png')
         },
         {
           tags: ['js', 'react '],
-          href:'https://platzi.com/@Jesuskinto/curso/15 57-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/15 57-git-github/diploma/detalle/',
           src: require('@/assets/certifics/cursoReactRouter.png')
         }
       ]

@@ -15,7 +15,7 @@ export default {
   components: {
     PTecnology
   },
-  data() {
+  data () {
     return {
       tecnologies: [
         {
