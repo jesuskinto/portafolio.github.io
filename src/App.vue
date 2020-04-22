@@ -1,19 +1,39 @@
 <template>
   <div id="app">
-    <p-header :activated="activated"></p-header>
-    <p-content @showModal="showModal = $event"></p-content>
+    <p-header></p-header>
+    <p-content></p-content>
     <p-footer></p-footer>
-
-    <!-- Modales -->
-    <p-modals :showModal="showModal" @close="showModal = null"></p-modals>
+    <p-modal
+      :activate="showModal"
+      @close="showModal = false">
+      <template slot="content">
+        <h1 class="title">Choose a language:</h1>
+        <h2 class="subtitle">Elige un idioma:</h2>
+        <br>
+        <div class="columns button-langs">
+          <div class="column">
+            <button class="button is-info large"
+              @click="changeLang('en')">
+              English/Ingles
+            </button>
+          </div>
+          <div class="column">
+            <button class="button is-info large"
+              @click="changeLang('es')">
+              Spanish/Español
+            </button>
+          </div>
+        </div>
+      </template>
+    </p-modal>
   </div>
 </template>
 
 <script>
 import PHeader from '@/components/layout/Header.vue'
-import PContent from '@/components/layout/Content.vue'
+import PModal from '@/components/shared/Modal.vue'
+const PContent = () => import('@/components/layout/Content.vue')
 const PFooter = () => import('@/components/layout/Footer.vue')
-const PModals = () => import('@/components/Modals.vue')
 
 export default {
   name: 'app',
@@ -24,14 +44,13 @@ export default {
       $projects: null,
       $contact: null,
       $certific: null,
-      activated: 'tecnoligies',
-      showModal: null
+      showModal: false
     }
   },
 
   components: {
     PHeader,
-    PModals,
+    PModal,
     PFooter,
     PContent
   },
@@ -40,15 +59,7 @@ export default {
     this.setLang()
     window.addEventListener('scroll', this.handleScroll)
     const tabs = document.getElementById('tabs')
-    const tecnologies = document.getElementById('tecnologies')
-    const projects = document.getElementById('projects')
-    const certific = document.getElementById('certific')
-    const contact = document.getElementById('contact')
     this.$sticky = tabs.offsetTop
-    this.$tecnologies = tecnologies.offsetTop
-    this.$projects = projects.offsetTop
-    this.$certific = certific.offsetTop
-    this.$contact = contact.offsetTop
   },
 
   destroyed () {
@@ -64,33 +75,16 @@ export default {
         document.getElementById('tabs')
           .classList.remove('sticky')
       }
-
-      if (this.inRange(this.$tecnologies, this.$projects)) {
-        this.activated = 'tecnologies'
-      } else if (this.inRange(this.$projects, this.$certific)) {
-        this.activated = 'projects'
-      } else if (this.inRange(this.$certific, this.$contact)) {
-        this.activated = 'certific'
-      } else if (this.inRange(this.$contact)) {
-        this.activated = 'contact'
-      }
-    },
-    inRange (sectionStart, sectionEnd = null) {
-      const offter = 126
-      const position = window.pageYOffset + offter
-      if (sectionEnd) {
-        return (position >= sectionStart && position < sectionEnd)
-      }
-      return (position >= sectionStart)
     },
     changeLang (lang) {
       localStorage.getItem('lang')
       this.$i18n.locale = lang
+      this.showModal = false
     },
     setLang () {
       const lang = localStorage.getItem('lang')
       if (lang) this.changeLang(lang)
-      else this.showModal = 'lang'
+      else this.showModal = true
     }
   }
 }

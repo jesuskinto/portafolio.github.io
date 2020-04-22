@@ -75,35 +75,20 @@
       <nav class="tabs">
         <div class="container">
           <ul>
-            <li
-              :class="{'is-active': isActive('tecnologies')}"
-              v-scroll-to="{ el: '#tecnologies'}"
-              @click="activate('tecnologies')">
+            <li v-scroll-to="{ el: '#tecnologies'}">
               <a>{{$t('tecnologies')}}</a>
             </li>
-            <li
-              :class="{'is-active': isActive('projects')}"
-              v-scroll-to="'#projects'"
-              @click="activate('projects')">
+            <li v-scroll-to="'#projects'">
               <a>{{$t('projects')}}</a>
             </li>
-            <li
-              :class="{'is-active': isActive('certific')}"
-              v-scroll-to="'#certific'"
-              @click="activate('certific')">
+            <li v-scroll-to="'#certific'">
               <a>{{$t('certific')}}</a>
             </li>
-            <li
-              :class="{'is-active': isActive('challenges')}"
-              v-scroll-to="'#challenges'"
-              @click="activate('challenges')">
+            <li v-scroll-to="'#challenges'">
               <a>{{$t('challenges')}}</a>
             </li>
-            <li
-              :class="{'is-active': isActive('contact')}"
-              v-scroll-to="{ el: '#contact'}"
-              @click="activate('contact')">
-                <a>{{$t('contact')}}</a>
+            <li v-scroll-to="{ el: '#contact'}">
+              <a>{{$t('contact')}}</a>
             </li>
           </ul>
         </div>
@@ -118,36 +103,15 @@ export default {
   name: 'Header',
   data () {
     return {
-      active: 'tecnologies',
       showMenu: false,
       showLanguage: false
     }
   },
-  props: {
-    activated: {
-      type: String,
-      default: 'tecnologies',
-      required: true
-    }
-  },
   methods: {
-    isActive (nameSection) {
-      return this.active === nameSection
-    },
-    activate (nameSection) {
-      this.active = nameSection
-    },
     changeLang (lang) {
       this.$i18n.locale = lang
       localStorage.setItem('lang', lang)
       this.showLanguage = false
-    }
-  },
-  watch: {
-    activated: function (newValue, oldValue) {
-      if (newValue === oldValue) return
-
-      this.active = newValue
     }
   }
 }
