@@ -2,99 +2,8 @@
   <div class="container">
     <h1 class="title">💡 {{ $t('tecnologies')}}</h1>
     <div class="sid">
-      <p-tecnology title="Vuejs">
-        <img slot="image" src="@/assets/tecnologies/vuejs.png">
-      </p-tecnology>
-      <p-tecnology title="Angular" progress="40">
-        <img slot="image" src="@/assets/tecnologies/angular.png">
-      </p-tecnology>
-      <p-tecnology  title="Ionic" progress="70">
-        <img slot="image" src="@/assets/tecnologies/ionic.png">
-      </p-tecnology>
-      <p-tecnology  title="Javascript">
-        <img slot="image" src="@/assets/tecnologies/js.png">
-      </p-tecnology>
-      <p-tecnology  title="Typecript" progress="40">
-        <img slot="image" src="@/assets/tecnologies/ts.png">
-      </p-tecnology>
-      <p-tecnology  title="BulmaCSS">
-        <img slot="image" src="@/assets/tecnologies/bulma.png">
-      </p-tecnology>
-      <p-tecnology  title="Buefy">
-        <img slot="image" src="@/assets/tecnologies/buefy.png">
-      </p-tecnology>
-      <p-tecnology  title="Bootstrap">
-        <img slot="image" src="@/assets/tecnologies/bootstrap.png">
-      </p-tecnology>
-      <p-tecnology  title="CSS">
-        <img slot="image" src="@/assets/tecnologies/css.png">
-      </p-tecnology>
-      <p-tecnology  title="SASS">
-        <img slot="image" src="@/assets/tecnologies/sass.png">
-      </p-tecnology>
-      <p-tecnology  title="HTML">
-        <img slot="image" src="@/assets/tecnologies/html.png">
-      </p-tecnology>
-      <p-tecnology  title="PUG">
-        <img slot="image" src="@/assets/tecnologies/pug.png">
-      </p-tecnology>
-      <p-tecnology  title="Google Maps">
-        <img slot="image" src="@/assets/tecnologies/googleMapApi.png">
-      </p-tecnology>
-      <p-tecnology  title="WebPack">
-        <img slot="image" src="@/assets/tecnologies/webpack.png">
-      </p-tecnology>
-      <p-tecnology  title="Docker">
-        <img slot="image" src="@/assets/tecnologies/docker.png">
-      </p-tecnology>
-      <p-tecnology  title="Vagrant">
-        <img slot="image" src="@/assets/tecnologies/vagrant.png">
-      </p-tecnology>
-      <p-tecnology  title="Git">
-        <img slot="image" src="@/assets/tecnologies/git.png">
-      </p-tecnology>
-      <p-tecnology  title="Python">
-        <img slot="image" src="@/assets/tecnologies/python.jpeg">
-      </p-tecnology>
-      <p-tecnology  title="Django">
-        <img slot="image" src="@/assets/tecnologies/django.png">
-      </p-tecnology>
-      <p-tecnology  title="Django Rest Framework">
-        <img slot="image" src="@/assets/tecnologies/drf.png">
-      </p-tecnology>
-      <p-tecnology  title="Rabbitmq">
-        <img slot="image" src="@/assets/tecnologies/rabbitmq.png">
-      </p-tecnology><p-tecnology  title="Celery">
-        <img slot="image" src="@/assets/tecnologies/celery.png">
-      </p-tecnology>
-      <p-tecnology  title="Firebase">
-        <img slot="image" src="@/assets/tecnologies/firebase.png">
-      </p-tecnology><p-tecnology  title="Mysql">
-        <img slot="image" src="@/assets/tecnologies/mysql.png">
-      </p-tecnology>
-      <p-tecnology  title="Postgresql">
-        <img slot="image" src="@/assets/tecnologies/postgresql.png">
-      </p-tecnology>
-      <p-tecnology  title="Linux">
-        <img slot="image" src="@/assets/tecnologies/linux.png">
-      </p-tecnology>
-      <p-tecnology  title="React">
-        <img slot="image" src="@/assets/tecnologies/react.png">
-      </p-tecnology>
-      <p-tecnology  title="Npm">
-        <img slot="image" src="@/assets/tecnologies/npm.png">
-      </p-tecnology>
-      <p-tecnology  title="Express">
-        <img slot="image" src="@/assets/tecnologies/express.png">
-      </p-tecnology>
-      <p-tecnology  title="Nodejs">
-        <img slot="image" src="@/assets/tecnologies/node.png">
-      </p-tecnology>
-      <p-tecnology  title="Yarn">
-        <img slot="image" src="@/assets/tecnologies/yarn.png">
-      </p-tecnology>
-      <p-tecnology  title="Laravel">
-        <img slot="image" src="@/assets/tecnologies/laravel.png">
+      <p-tecnology v-for="(t, i) in tecnologies" :key="i" :title="t.title">
+        <img slot="image" :src="t.src">
       </p-tecnology>
     </div>
   </div>
@@ -105,6 +14,140 @@ import PTecnology from '@/components/Tecnology.vue'
 export default {
   components: {
     PTecnology
+  },
+  data() {
+    return {
+      tecnologies: [
+        {
+          title: 'Vuejs',
+          src: require('@/assets/tecnologies/vuejs.png')
+        },
+        {
+          title: 'Angular',
+          src: require('@/assets/tecnologies/angular.png')
+        },
+        {
+          title: 'Ionic',
+          src: require('@/assets/tecnologies/ionic.png')
+        },
+        {
+          title: 'Javascript',
+          src: require('@/assets/tecnologies/js.png')
+        },
+        {
+          title: 'Typecript',
+          src: require('@/assets/tecnologies/ts.png')
+        },
+        {
+          title: 'BulmaCSS',
+          src: require('@/assets/tecnologies/bulma.png')
+        },
+        {
+          title: 'Buefy',
+          src: require('@/assets/tecnologies/buefy.png')
+        },
+        {
+          title: 'Bootstrap',
+          src: require('@/assets/tecnologies/bootstrap.png')
+        },
+        {
+          title: 'CSS',
+          src: require('@/assets/tecnologies/css.png')
+        },
+        {
+          title: 'SASS',
+          src: require('@/assets/tecnologies/sass.png')
+        },
+        {
+          title: 'HTML',
+          src: require('@/assets/tecnologies/html.png')
+        },
+        {
+          title: 'PUG',
+          src: require('@/assets/tecnologies/pug.png')
+        },
+        {
+          title: 'Google Maps',
+          src: require('@/assets/tecnologies/googleMapApi.png')
+        },
+        {
+          title: 'WebPack',
+          src: require('@/assets/tecnologies/webpack.png')
+        },
+        {
+          title: 'Docker',
+          src: require('@/assets/tecnologies/docker.png')
+        },
+        {
+          title: 'Vagrant',
+          src: require('@/assets/tecnologies/vagrant.png')
+        },
+        {
+          title: 'Git',
+          src: require('@/assets/tecnologies/git.png')
+        },
+        {
+          title: 'Python',
+          src: require('@/assets/tecnologies/python.jpeg')
+        },
+        {
+          title: 'Django',
+          src: require('@/assets/tecnologies/django.png')
+        },
+        {
+          title: 'Django Rest Framework',
+          src: require('@/assets/tecnologies/drf.png')
+        },
+        {
+          title: 'Rabbitmq',
+          src: require('@/assets/tecnologies/rabbitmq.png')
+        },
+        {
+          title: 'Celery',
+          src: require('@/assets/tecnologies/celery.png')
+        },
+        {
+          title: 'Firebase',
+          src: require('@/assets/tecnologies/firebase.png')
+        },
+        {
+          title: 'Mysql',
+          src: require('@/assets/tecnologies/mysql.png')
+        },
+        {
+          title: 'Postgresql',
+          src: require('@/assets/tecnologies/postgresql.png')
+        },
+        {
+          title: 'Linux',
+          src: require('@/assets/tecnologies/linux.png')
+        },
+        {
+          title: 'React',
+          src: require('@/assets/tecnologies/react.png')
+        },
+        {
+          title: 'Npm',
+          src: require('@/assets/tecnologies/npm.png')
+        },
+        {
+          title: 'Express',
+          src: require('@/assets/tecnologies/express.png')
+        },
+        {
+          title: 'Nodejs',
+          src: require('@/assets/tecnologies/node.png')
+        },
+        {
+          title: 'Yarn',
+          src: require('@/assets/tecnologies/yarn.png')
+        },
+        {
+          title: 'Laravel',
+          src: require('@/assets/tecnologies/laravel.png')
+        }
+      ]
+    }
   }
 }
 </script>
