@@ -12,6 +12,9 @@
             <img slot="image" :src="p.src" :alt="p.title">
             <strong slot="title">{{ p.title }}</strong>
             <template slot="type">{{ p.type }}</template>
+            <span slot="repos" v-for="(r, i) in p.repos" :key="i">
+              <a :href="r" target="_blank" rel="noopener">{{ r | urlToName }}</a> <br>
+            </span>
             <template slot="job">{{ p.job }}</template>
             <template slot="date">{{ p.date }}</template>
           </p-project>
@@ -43,6 +46,11 @@
         <h2 class="subtitle">{{ modal.data.subtitle }}</h2>
         <span>url: <a :href="modal.data.href">{{ modal.data.href }}</a></span>
         <br>
+        <span>Repos:</span>
+        <div v-for="(r, i) in modal.data.repos" :key="i" >
+          <a :href="r">{{ r | urlToName }}</a>
+        </div>
+        <br>
         <span>{{ $t('date')}}: {{ modal.data.date }}</span>
         <hr>
         <p> {{ modal.data.bio }} </p>
@@ -61,6 +69,17 @@
             </ol>
           </div>
         </div>
+        <template v-show="modal.data.metadata">
+          <hr>
+          <div v-for="(m, i) in modal.data.metadata" :key="i">
+            <h3>{{ m.title }}</h3>
+            <a :href="m.href" target="_blank" rel="noopener">
+              <img v-if="m.type === 'image'" :src="m.value" :alt="m.title">
+            </a>
+            <p v-if="m.type === 'paragraph'" :alt="m.title">{{ m.value }}</p>
+            <hr />
+          </div>
+        </template>
       </template>
     </p-modal>
   </div>
@@ -77,6 +96,13 @@ export default {
     PModal,
     Carousel,
     Slide
+  },
+  filters: {
+    urlToName: function (value) {
+      if (!value) return ''
+      const chucks = value.split('/')
+      return chucks[chucks.length - 1]
+    }
   },
   data () {
     return {
@@ -101,6 +127,10 @@ export default {
           title: 'Registro Medico Cardiovascular',
           subtitle: 'Plataforma de solicitud de creditos',
           href: 'https://registro-cardiovascular-app-97s2gj706.now.sh/',
+          repos: [
+            'https://github.com/jesuskinto/registrocardivascular-api',
+            'https://github.com/jesuskinto/registrocardiovascular-ui'
+          ],
           bio: 'Creación, Edición y Eliminación pacientes cardiovasculares, se permiten las busquedas de pacientes por DNI, Nombre y filtrado avanzado por diagnostico o rango de fechas.',
           tecnologies: [
             'MongoDB',
@@ -155,6 +185,9 @@ export default {
           title: 'Portafolio',
           subtitle: 'Portafolio personal',
           href: window.location.href,
+          repos: [
+            'https://github.com/jesuskinto/portafolio.github.io'
+          ],
           bio: 'Portafolio personal construido con Vuejs y BulmaCSS para presentar mis trabajos.',
           tecnologies: [
             'Vuejs',
@@ -169,7 +202,11 @@ export default {
           slug: 'mascotas',
           src: require('@/assets/projects/mascotas.png'),
           images: [
-            require('@/assets/projects/mascotas.png')
+            require('@/assets/projects/mascotas.png'),
+            require('@/assets/projects/mascotas0.png'),
+            require('@/assets/projects/mascotas1.png'),
+            require('@/assets/projects/mascotas4.png'),
+            require('@/assets/projects/mascotas6.png')
           ],
           title: 'Mascotas',
           job: 'Full Stack Developer',
@@ -191,6 +228,26 @@ export default {
           ],
           jobs: [
             'Full Stack Develop'
+          ],
+          metadata: [
+            {
+              type: 'image',
+              title: 'ERE',
+              value: require('@/assets/projects/mascotas-ere.png'),
+              href: require('@/assets/projects/mascotas-ere.png')
+            },
+            {
+              type: 'image',
+              title: 'Diagrams of class',
+              value: require('@/assets/projects/mascotas-diagramsofclass.png'),
+              href: require('@/assets/projects/mascotas-diagramsofclass.png')
+            },
+            {
+              type: 'image',
+              title: 'Wireframe',
+              value: require('@/assets/projects/mascotas-wireframe.png'),
+              href: 'https://projects.invisionapp.com/freehand/document/8jL8wCgCb'
+            }
           ]
         },
         {

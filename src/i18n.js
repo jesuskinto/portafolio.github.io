@@ -55,7 +55,8 @@ const messages = {
     'certificates-message': 'In a constant increase world, the only way of advance is never stop learning. \n The following are a lists of courses taken by me in lasts year:',
     'challenges-message': 'Like all Get, there is always time to play:',
     'products-message': 'I believe faithfully that a good developer should dedicate time to personal projects, to grow each day with challenges, to refactor their code, to let their imagination fly.',
-    'products-lema': 'A good programmer is not born; it is built day by day with its own code.'
+    'products-lema': 'A good programmer is not born; it is built day by day with its own code.',
+    'repos': 'Repos'
   },
   es: {
     'spanish': 'Español',
@@ -108,7 +109,8 @@ const messages = {
     'certificates-message': 'En un mundo en constante crecimiento, la unica forma de avanzar es nunca parar de aprender \n Aca un listado cursos realizados en los ultimos años:',
     'challenges-message': 'Como todo Get, siempre hay tiempo para jugar:',
     'products-message': 'Creo fielmente que un buen desarrollador debe dedicar tiempo a proyectos personales, a crecer cada dia con desafios, a refactorizar su codigo, a dejar volar su imaginacion.',
-    'products-lema': 'Un buen programador no nace; se construye dia a dia con su propio codigo.'
+    'products-lema': 'Un buen programador no nace; se construye dia a dia con su propio codigo.',
+    'repos': 'Repos'
   }
 }
 

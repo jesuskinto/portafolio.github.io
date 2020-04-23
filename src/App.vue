@@ -77,7 +77,7 @@ export default {
       }
     },
     changeLang (lang) {
-      localStorage.getItem('lang')
+      localStorage.setItem('lang', lang)
       this.$i18n.locale = lang
       this.showModal = false
     },

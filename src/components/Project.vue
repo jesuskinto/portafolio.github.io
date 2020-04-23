@@ -13,6 +13,10 @@
             <strong>{{$t('type')}}:</strong>
             <slot name="type"></slot>
           </p>
+           <p>
+            <strong>{{$t('repos')}}:</strong>
+            <slot name="repos"></slot>
+          </p>
           <p>
             <strong>{{$t('job')}}:</strong>
             <slot name="job"></slot>
