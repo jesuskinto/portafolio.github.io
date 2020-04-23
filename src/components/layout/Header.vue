@@ -50,7 +50,7 @@
       <div class="container has-text-centered">
         <div class="wrapper-image">
           <figure class="image is-1by1">
-            <img src="@/assets/avatar.jpeg">
+            <img src="@/assets/avatar.jpeg" alt="avatar">
           </figure>
         </div>
         <p class="title">

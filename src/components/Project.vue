@@ -1,5 +1,5 @@
 <template>
-  <div class="Proyect" data-aos="zoom-in">
+  <div class="Proyect">
     <div class="box" @click="$emit('projectClicked')">
       <figure class="image is-3by2">
         <slot name="image"></slot>

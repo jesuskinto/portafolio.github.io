@@ -1,0 +1,4 @@
+# robots.txt file for Portafolio
+
+User-agent: *
+allow: /

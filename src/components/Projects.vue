@@ -9,7 +9,7 @@
         :perPageCustom="[[768, 1], [1024, 3], [1216, 4]]">
         <slide v-for="(p, i) in projects" :key="i">
           <p-project @projectClicked="openModal(p)">
-            <img slot="image" :src="p.src">
+            <img slot="image" :src="p.src" :alt="p.title">
             <strong slot="title">{{ p.title }}</strong>
             <template slot="type">{{ p.type }}</template>
             <template slot="job">{{ p.job }}</template>

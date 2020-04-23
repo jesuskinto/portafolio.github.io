@@ -74,7 +74,7 @@
       </div>
     </div>
     <div class="button-wrapper">
-      <a class="button more" href="https://codepen.io/jesuskinto/" target="_blank">
+      <a class="button more" href="https://codepen.io/jesuskinto/" target="_blank" rel="noopener">
         <span>Ver Mas</span>
       </a>
     </div>

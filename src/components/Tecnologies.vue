@@ -3,7 +3,7 @@
     <h1 class="title">💡 {{ $t('tecnologies')}}</h1>
     <div class="sid">
       <p-tecnology v-for="(t, i) in tecnologies" :key="i" :title="t.title">
-        <img slot="image" :src="t.src">
+        <img slot="image" :src="t.src" :alt="t.title">
       </p-tecnology>
     </div>
   </div>
