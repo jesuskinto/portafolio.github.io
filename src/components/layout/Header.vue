@@ -45,7 +45,6 @@
         </div>
       </nav>
     </div>
-
     <div class="hero-body">
       <div class="container has-text-centered">
         <div class="wrapper-image">
@@ -70,7 +69,6 @@
         </p>
       </div>
     </div>
-
     <div id="tabs" class="hero-foot hero is-info">
       <nav class="tabs">
         <div class="container">

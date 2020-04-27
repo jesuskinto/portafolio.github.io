@@ -3,35 +3,11 @@
     <p-header></p-header>
     <p-content></p-content>
     <p-footer></p-footer>
-    <p-modal
-      :activate="showModal"
-      @close="showModal = false">
-      <template slot="content">
-        <h1 class="title">Choose a language:</h1>
-        <h2 class="subtitle">Elige un idioma:</h2>
-        <br>
-        <div class="columns button-langs">
-          <div class="column">
-            <button class="button is-info large"
-              @click="changeLang('en')">
-              English/Ingles
-            </button>
-          </div>
-          <div class="column">
-            <button class="button is-info large"
-              @click="changeLang('es')">
-              Spanish/Español
-            </button>
-          </div>
-        </div>
-      </template>
-    </p-modal>
   </div>
 </template>
 
 <script>
 import PHeader from '@/components/layout/Header.vue'
-import PModal from '@/components/shared/Modal.vue'
 const PContent = () => import('@/components/layout/Content.vue')
 const PFooter = () => import('@/components/layout/Footer.vue')
 
@@ -50,13 +26,11 @@ export default {
 
   components: {
     PHeader,
-    PModal,
     PFooter,
     PContent
   },
 
   mounted () {
-    this.setLang()
     window.addEventListener('scroll', this.handleScroll)
     const tabs = document.getElementById('tabs')
     this.$sticky = tabs.offsetTop
@@ -75,16 +49,6 @@ export default {
         document.getElementById('tabs')
           .classList.remove('sticky')
       }
-    },
-    changeLang (lang) {
-      localStorage.setItem('lang', lang)
-      this.$i18n.locale = lang
-      this.showModal = false
-    },
-    setLang () {
-      const lang = localStorage.getItem('lang')
-      if (lang) this.changeLang(lang)
-      else this.showModal = true
     }
   }
 }

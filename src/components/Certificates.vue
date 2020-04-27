@@ -23,6 +23,7 @@
 </template>
 
 <script>
+import AOS from 'aos'
 import PCertific from '@/components/Certific.vue'
 export default {
   components: {
@@ -153,13 +154,16 @@ export default {
           alt: 'cursoReact'
         },
         {
-          tags: ['js', 'react '],
-          href: 'https://platzi.com/@Jesuskinto/curso/15 57-git-github/diploma/detalle/',
+          tags: ['js', 'react'],
+          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
           src: require('@/assets/certifics/cursoReactRouter.png'),
           alt: 'cursoReactRouter'
         }
       ]
     }
+  },
+  updated () {
+    AOS.refresh()
   },
   methods: {
     evalFilter (filters) {
