@@ -100,8 +100,8 @@ iframe
   height: 350px !important
 
 .button-wrapper
+  height: 0
   text-align: center
-  position: absolute
-  botton: -20px
-  left: 46.5%
+  position: relative
+  top: 20px
 </style>
