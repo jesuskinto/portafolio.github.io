@@ -12,47 +12,7 @@
 <script>
 export default {
   name: 'email-box',
-
-  data () {
-    return {
-      form: {
-        email: '',
-        subject: '',
-        message: ''
-      },
-      state: 'send'
-    }
-  },
-
-  computed: {
-    isSending () {
-      return this.state === 'sending'
-    },
-
-    isSent () {
-      return this.state === 'sent'
-    },
-
-    isSend () {
-      return this.state === 'send'
-    }
-  },
-
   methods: {
-    send () {
-      if (this.isSent) { return }
-      if (this.form.email === 'jesuskinto@gmail.com') { return }
-      this.state = 'sending'
-      setTimeout(() => {
-        this.sent()
-      }, 3000)
-    },
-
-    sent () {
-      this.state = 'sent'
-      this.form = {}
-    },
-
     copyInCLickboard () {
       const copyText = document.getElementById('gmail')
       copyText.select()
