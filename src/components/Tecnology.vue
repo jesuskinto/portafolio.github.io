@@ -1,5 +1,5 @@
 <template>
-  <div class="tecnology">
+  <div class="tecnology" data-aos="zoom-in">
     <figure>
       <slot name="image"></slot>
     </figure>

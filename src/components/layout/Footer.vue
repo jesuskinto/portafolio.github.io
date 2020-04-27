@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="content has-text-centered">
+    <div class="content has-text-centered" data-aos="fade-up">
       <p>
         {{$t('made with')}} <strong class="heart">💙</strong> {{ $t('to the world') }}!
       </p>

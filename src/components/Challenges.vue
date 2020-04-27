@@ -4,7 +4,7 @@
     <h2 class="subtitle">{{ $t('challenges-message')}}</h2>
     <div class="columns is-multiline">
       <div class="column is-6">
-        <iframe
+        <iframe data-aos="fade"
           scrolling="no"
           title="Clock"
           src="https://codepen.io/jesuskinto/embed/preview/LYpYYXO?height=265&theme-id=light"
@@ -21,6 +21,7 @@
       </div>
       <div class="column is-6">
         <iframe
+          data-aos="fade"
           scrolling="no"
           title="Sliders"
           src="https://codepen.io/jesuskinto/embed/preview/gOapmMj?height=265&theme-id=light"
@@ -38,6 +39,7 @@
       </div>
       <div class="column is-6">
         <iframe
+          data-aos="fade"
           scrolling="no"
           title="Calculator"
           src="https://codepen.io/jesuskinto/embed/preview/wvKGrwE?height=265&theme-id=light&default-tab=result"
@@ -55,6 +57,7 @@
       </div>
       <div class="column is-6">
         <iframe
+          data-aos="fade"
           scrolling="no"
           title="Complex background patterns (CSS SECRETS)"
           src="https://codepen.io/jesuskinto/embed/preview/eYpBZvX?height=265&theme-id=light&default-tab=result"

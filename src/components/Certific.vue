@@ -2,7 +2,7 @@
   <a class="Proyect column is-6-mobile is-3-desktop"
     :href="href"
     target="_blank" rel="noopener">
-    <div class="box">
+    <div class="box" data-aos="zoom-out">
       <figure image is-3by2>
         <slot name="image"></slot>
       </figure>
