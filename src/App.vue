@@ -19,8 +19,7 @@ export default {
       $sticky: null,
       $projects: null,
       $contact: null,
-      $certific: null,
-      showModal: false
+      $certific: null
     }
   },
 
