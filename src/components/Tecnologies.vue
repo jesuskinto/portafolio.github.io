@@ -127,6 +127,10 @@ export default {
           src: require('@/assets/tecnologies/react.png')
         },
         {
+          title: 'React Native',
+          src: require('@/assets/tecnologies/react.png')
+        },
+        {
           title: 'Npm',
           src: require('@/assets/tecnologies/npm.png')
         },
