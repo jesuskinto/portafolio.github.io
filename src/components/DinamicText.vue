@@ -1,5 +1,5 @@
 <template>
-  <span>{{ $t(seletedWord) }}!</span>
+  <div>{{ $t(seletedWord) }}!</div>
 </template>
 
 <script>
@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-  span
+  div
     margin: 0 10px
     font-size: 80px
     animation-duration: 3s

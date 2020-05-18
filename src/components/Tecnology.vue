@@ -1,10 +1,12 @@
 <template>
-  <div class="tecnology">
-    <figure>
-      <slot name="image"></slot>
-    </figure>
-    <p>{{title}}</p>
-  </div>
+  <a :href="url" target="_blanck">
+    <div class="tecnology">
+        <figure>
+          <slot name="image"></slot>
+        </figure>
+        <p>{{title}}</p>
+      </div>
+  </a>
 </template>
 
 <script>
@@ -15,6 +17,10 @@ export default {
       required: true,
       type: String,
       default: 'Title'
+    },
+    url: {
+      required: true,
+      type: String
     }
   }
 }
@@ -25,7 +31,6 @@ export default {
 
 .tecnology
   display: inline-block
-  cursor: pointer
   background-color: $grey-light
   overflow: hidden
   padding: 10px
@@ -39,7 +44,6 @@ export default {
     width: 35px
     height: 35px
     overflow: hidden
-
   p
     display: inline
     padding: 10px

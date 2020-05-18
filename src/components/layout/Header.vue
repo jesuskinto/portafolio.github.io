@@ -1,5 +1,5 @@
 <template>
-  <header class="hero is-info is-small">
+  <header class="hero is-javascript-gray is-medium">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
@@ -35,8 +35,11 @@
                   </div>
                 </div>
               </div>
+              <a href="https://codepen.io/jesuskinto" target="_blanck" class="navbar-item">
+                <span>CodePen</span>
+              </a>
               <span class="navbar-item">
-                <a href="https://github.com/jesuskinto" target="_blanck" class="button is-info is-inverted">
+                <a href="https://github.com/jesuskinto" target="_blanck"  class="button is-info is-inverted">
                   <span>Github</span>
                 </a>
               </span>
@@ -52,27 +55,30 @@
             <img src="@/assets/avatar.jpeg" alt="avatar">
           </figure>
         </div>
+        <br>
         <p class="title">
           JesusKinto
         </p>
         <p class="subtitle">
-          <strong>potterFilia | Javacript FullStack | Python FullStack | codeFilia</strong>
+          <strong> Javacript FullStack | codeFilia</strong>
           <br>
-          Full Stack Developer | Ingenieria de Sistemas ULA VE | Estudiante de Platzi
+          <br>
+          {{ $t('short-bio') }}
           <br>
           {{ $t('experience-message') }}
           <br>
-          <br>
-          <strong>😎</strong> = <strong>🐍</strong>Python + <strong>🤖</strong>Javascript
           <br>
           <br>
         </p>
       </div>
     </div>
-    <div id="tabs" class="hero-foot hero is-info">
+    <div id="tabs" class="hero-foot hero is-javascript">
       <nav class="tabs">
         <div class="container">
           <ul>
+            <!-- <li v-scroll-to="{ el: '#bio'}">
+              <a>Bio</a>
+            </li> -->
             <li v-scroll-to="{ el: '#tecnologies'}">
               <a>{{$t('tecnologies')}}</a>
             </li>
@@ -91,7 +97,7 @@
           </ul>
         </div>
       </nav>
-      <div class="line hero is-info"></div>
+      <div class="line hero is-javascript"></div>
     </div>
   </header>
 </template>
@@ -127,13 +133,17 @@ header
 
 .wrapper-image
   display: inline-block
-  width: 200px
-  border-radius: 150px
+  width: 250px
   overflow: hidden
+  box-shadow: 10px 10px 0px #ffd03d4d
+  margin-bottom: 2em
 .title
   margin-bottom: 35px
 .container a
   font-weight: 600
+
+.hero.is-medium .hero-body
+  padding-top: 6rem
 
 .line
   height: 80px

@@ -19,13 +19,41 @@
 
 
 /* Font */
-@import url('https://fonts.googleapis.com/css?family=Text+Me+One&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap')
 
 *
-  font-family: 'Text Me One', sans-serif
+  font-family: 'Open Sans', sans-serif
  
 button, .button, .box, .dropdown-content
   border-radius: 0 !important
+
+
+$javascript: #ffd03d
+$javascript-gray: #333333
+$shadow: 2px 2px 6px rgba(0, 0, 0, 0.5)
+
+.is-javascript
+  background-color: $javascript
+
+.is-javascript-gray
+  background-color: $javascript-gray
+  .subtitle, .title, strong, .navbar-item, .navbar-link
+    color: white
+  .subtitle, .title, strong
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5)
+  .button.is-info.is-inverted
+    color: $javascript-gray
+  .navbar-menu
+    background-color: $javascript-gray
+    .navbar-item
+      &:hover
+        color: $javascript-gray !important
+      &:active
+        color: $javascript !important
+
+  a.dropdown-item.is-active, button.dropdown-item.is-active
+    background-color: $javascript
+    color: $javascript-gray
 
 
 .social a
@@ -42,7 +70,7 @@ button, .button, .box, .dropdown-content
   background: #293B4B !important
 
 .instagram
-  background: #FBCC48 !important
+  background: #E70058 !important
 
 .github
   background: #24282E !important
@@ -55,7 +83,7 @@ button, .button, .box, .dropdown-content
 
 .codepen
   background: #24282E !important
-
+  
 #gmail
   background: #E43426 !important
   color: white !important
@@ -121,3 +149,15 @@ button, .button, .box, .dropdown-content
 #contact
   padding-top: 150px
   padding-bottom: 150px
+
+
+
+::-webkit-scrollbar
+  width: 8px
+  height: 5px
+::-webkit-scrollbar-track
+  background: #f1f1f1
+::-webkit-scrollbar-thumb
+  background: #888
+::-webkit-scrollbar-thumb:hover
+  background: #555

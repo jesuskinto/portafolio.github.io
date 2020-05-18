@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="title">📁 {{ $t('certificates')}}</h1>
+    <h1 class="title"># {{ $t('certificates')}}</h1>
     <h2 class="subtitle">
       {{ $t('certificates-message')}}
     </h2>

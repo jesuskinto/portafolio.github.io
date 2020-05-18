@@ -1,6 +1,6 @@
 <template>
   <div class="container" data-aos="fade">
-    <h1 class="title">☏ {{ $t('contact')}}</h1>
+    <h1 class="title"># {{ $t('contact')}}</h1>
     <div class="social">
       <h2 class="subtitle"> {{$t('see you on')}}: </h2>
       <a class="button twitter"

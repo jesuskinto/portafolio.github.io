@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="title">📚 {{ $t('challenges')}}</h1>
+    <h1 class="title"># {{ $t('challenges')}}</h1>
     <h2 class="subtitle">{{ $t('challenges-message')}}</h2>
     <div class="columns is-multiline">
       <div v-for="r in results" :key="r" class="column is-6">

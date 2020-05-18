@@ -3,7 +3,7 @@
     <h2 class="subtitle"> {{$t('sent a email to')}}:
       <span>
         <input @click="copyInCLickboard" class="button" id="gmail" type="text" value="jesuskinto@gmail.com" readonly>
-        <label for="gmail">Copy email</label>
+        <label for="gmail" style="display: none">Copy email</label>
       </span>
     </h2>
   </div>

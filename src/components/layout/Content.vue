@@ -1,5 +1,8 @@
 <template>
   <main>
+    <!-- <section id="bio" class="section">
+      <p-bio></p-bio>
+    </section> -->
     <section id="tecnologies" class="section">
       <p-tecnologies></p-tecnologies>
     </section>
@@ -20,8 +23,9 @@
       <div class="container">
         <span class="title">{{$t('the web is beautiful')}}, </span>
         <span class="subtitle">
-          {{$t('let\'s build something')}}: <p-dinamic-text></p-dinamic-text>
+          {{$t('let\'s build something')}}:
         </span>
+        <p-dinamic-text></p-dinamic-text>
       </div>
       <div class="line bottom"></div>
     </section>
@@ -32,6 +36,7 @@
 </template>
 
 <script>
+// const PBio = () => import('@/components/Bio.vue')
 const PTecnologies = () => import('@/components/Tecnologies.vue')
 const PProjects = () => import('@/components/Projects.vue')
 const PCertificates = () => import('@/components/Certificates.vue')
@@ -41,6 +46,7 @@ const PContact = () => import('@/components/Contact.vue')
 
 export default {
   components: {
+    // PBio,
     PTecnologies,
     PProjects,
     PCertificates,

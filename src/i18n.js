@@ -56,7 +56,9 @@ const messages = {
     'challenges-message': 'Like all Get, there is always time to play:',
     'products-message': 'I believe faithfully that a good developer should dedicate time to personal projects, to grow each day with challenges, to refactor their code, to let their imagination fly.',
     'products-lema': 'A good programmer is not born; it is built day by day with its own code.',
-    'repos': 'Repos'
+    'repos': 'Repos',
+    'short-bio': 'Full Stack in Javascript, creating technology with scalable tools, building the future line by line',
+    'bio': 'Bio'
   },
   es: {
     'spanish': 'Español',
@@ -103,14 +105,16 @@ const messages = {
     'job': 'Cargo',
     'type': 'Tipo',
     'present': 'Actualidad',
-    'challenges': 'Restos',
+    'challenges': 'Retos',
     'all': 'Todos',
     'experience-message': 'Cuatro años de experiencia en la industria  TI, en pro del sofware lejible y escalable',
-    'certificates-message': 'En un mundo en constante crecimiento, la unica forma de avanzar es nunca parar de aprender \n Aca un listado cursos realizados en los ultimos años:',
+    'certificates-message': 'En un mundo en constnte crecimiento, la unica forma de avanzar es nunca parar de aprender \n Aca un listado cursos realizados en los ultimos años:',
     'challenges-message': 'Como todo Get, siempre hay tiempo para jugar:',
     'products-message': 'Creo fielmente que un buen desarrollador debe dedicar tiempo a proyectos personales, a crecer cada dia con desafios, a refactorizar su codigo, a dejar volar su imaginacion.',
     'products-lema': 'Un buen programador no nace; se construye dia a dia con su propio codigo.',
-    'repos': 'Repos'
+    'repos': 'Repos',
+    'short-bio': 'Full Stack en Javascript, creando tecnología con herramientas escalables, construyendo el futuro línea por linea',
+    'bio': 'Bio'
   }
 }
 

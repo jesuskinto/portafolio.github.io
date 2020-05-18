@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <h1 class="title">📚 {{ $t('projects')}}</h1>
+      <h1 class="title"># {{ $t('projects')}}</h1>
     </div>
     <div class="container pproyect">
       <carousel
@@ -353,7 +353,7 @@ export default {
           job: 'Frontend Developer',
           date: 'May-2019 - Jun-2019',
           title: 'PollitoIngles',
-          subtitle: 'E comerce c2c para objectos de bebes',
+          subtitle: 'E comerce c2c para productos de bebes',
           href: 'https://pollitoingles.com.ve/',
           bio: 'E comerce c2c para ropa y juguetes de bebes desarollado bajo un Backend en Django y un Frontend con AngularJs.',
           tecnologies: [
