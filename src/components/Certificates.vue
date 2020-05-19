@@ -95,39 +95,44 @@ export default {
         },
         {
           tags: ['js'],
-          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1807-scope/diploma/detalle/',
           src: require('@/assets/certifics/cursoClousureAndScope.png'),
           alt: 'cursoClousureAndScope'
         },
         {
           tags: ['js'],
-          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1798-javascript-navegador/diploma/detalle/',
           src: require('@/assets/certifics/cursoV8.png'),
-          alt: 'cursoV8'
+          alt: 'curso V8',
+          date: '19-01-2019'
         },
         {
           tags: ['js'],
           href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
           src: require('@/assets/certifics/cursoRouter.png'),
-          alt: 'cursoRouter'
+          alt: 'Taller de Creación de Router para Single Page App con JavaScript',
+          date: '30-01-2019'
         },
         {
           tags: ['js'],
           href: 'https://platzi.com/@Jesuskinto/curso/1339-fundamentos-javascript/diploma/detalle/',
           src: require('@/assets/certifics/cursoFundamentosDeJavascript.png'),
-          alt: 'cursoFundamentosDeJavascript'
+          alt: 'Fundamentos de JavaScript',
+          date: '19-04-2019'
         },
         {
           tags: ['js'],
-          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1640-frontend-developer/diploma/detalle/',
           src: require('@/assets/certifics/cursoFrontendDeveloper.png'),
-          alt: 'cursoFrontendDeveloper'
+          alt: 'Frontend Developer',
+          date: '23-09-2019'
         },
         {
           tags: ['js'],
-          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1650-prework/diploma/detalle/',
           src: require('@/assets/certifics/cursoPreworking.png'),
-          alt: 'cursoPreworking'
+          alt: 'Prework: Buenas Prácticas y Entorno de Desarrollo',
+          date: '21-09-2019'
         },
         {
           tags: ['js'],
@@ -137,27 +142,32 @@ export default {
         },
         {
           tags: ['js'],
-          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1815-ecmascript-6/diploma/detalle/',
           src: require('@/assets/certifics/cursoEMA6.png'),
-          alt: 'cursoEMA6'
+          alt: 'Curso de ECMAScript 6+',
+          date: '31-01-2020'
         },
         {
           tags: ['js', 'back'],
-          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1646-backend-nodejs/diploma/detalle/',
           src: require('@/assets/certifics/cursoNode.png'),
-          alt: 'cursoNode'
+          alt: 'Backend con Node',
+          date: '04-12-2019'
         },
         {
           tags: ['js', 'react'],
-          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1651-react-ejs/diploma/detalle/',
           src: require('@/assets/certifics/cursoReact.png'),
-          alt: 'cursoReact'
+          alt: 'curso React',
+          date: '23-10-2019'
         },
         {
           tags: ['js', 'react'],
-          href: 'https://platzi.com/@Jesuskinto/curso/1557-git-github/diploma/detalle/',
+          href: 'https://platzi.com/@Jesuskinto/curso/1652-react-router-redux/diploma/detalle/',
           src: require('@/assets/certifics/cursoReactRouter.png'),
-          alt: 'cursoReactRouter'
+          alt: 'Curso de React Router y Redux',
+          date: '05-11-2019'
+
         }
       ]
     }
@@ -179,3 +189,4 @@ export default {
   margin: 15px 0;
 }
 </style>
+

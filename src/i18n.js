@@ -107,13 +107,13 @@ const messages = {
     'present': 'Actualidad',
     'challenges': 'Retos',
     'all': 'Todos',
-    'experience-message': 'Cuatro años de experiencia en la industria  TI, en pro del sofware lejible y escalable',
-    'certificates-message': 'En un mundo en constnte crecimiento, la unica forma de avanzar es nunca parar de aprender \n Aca un listado cursos realizados en los ultimos años:',
+    'experience-message': 'Cuatro años de experiencia en la industria  TI, en busca de sofware legible y escalable',
+    'certificates-message': 'En un mundo en constante crecimiento, la unica forma de avanzar es nunca parar de aprender \n Aca un listado cursos realizados en los ultimos años:',
     'challenges-message': 'Como todo Get, siempre hay tiempo para jugar:',
     'products-message': 'Creo fielmente que un buen desarrollador debe dedicar tiempo a proyectos personales, a crecer cada dia con desafios, a refactorizar su codigo, a dejar volar su imaginacion.',
     'products-lema': 'Un buen programador no nace; se construye dia a dia con su propio codigo.',
     'repos': 'Repos',
-    'short-bio': 'Full Stack en Javascript, creando tecnología con herramientas escalables, construyendo el futuro línea por linea',
+    'short-bio': 'Full Stack en Javascript, creando tecnología con herramientas escalables, construyendo el futuro línea por línea',
     'bio': 'Bio'
   }
 }
