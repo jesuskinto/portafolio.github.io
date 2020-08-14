@@ -28,7 +28,7 @@
         <span>Platzi: @jesuskinto</span>
       </a>
       <a class="button whatsapp"
-        href="https://api.whatsapp.com/send?phone=584263758831" target="_blank" rel="noopener">
+        href="https://api.whatsapp.com/send?phone=584121672460" target="_blank" rel="noopener">
         <span>Whastapp</span>
       </a>
       <a class="button codepen"
