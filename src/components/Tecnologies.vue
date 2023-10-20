@@ -158,8 +158,6 @@ export default {
 
 <style lang="sass" scoped>
 .sid
-  margin-left: -10%
-  margin-right: -22%
   margin-top: 60px
   margin-bottom: 60px
 </style>

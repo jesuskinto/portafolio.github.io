@@ -52,7 +52,7 @@
       <div class="container has-text-centered">
         <div class="wrapper-image">
           <figure class="image is-1by1">
-            <img src="@/assets/avatar.jpeg" alt="avatar">
+            <img src="@/assets/avatar.png" alt="avatar">
           </figure>
         </div>
         <br>
@@ -60,7 +60,7 @@
           JesusKinto
         </p>
         <p class="subtitle">
-          <strong> Javacript FullStack | codeFilia</strong>
+          <strong> FullStack | Code </strong>
           <br>
           <br>
           {{ $t('short-bio') }}
@@ -72,7 +72,7 @@
         </p>
       </div>
     </div>
-    <div id="tabs" class="hero-foot hero is-javascript">
+    <div id="tabs" class="hero-foot hero">
       <nav class="tabs">
         <div class="container">
           <ul>
@@ -130,13 +130,14 @@ header
   bottom: -10px
   position: relative
   margin-bottom: 0 !important
+  z-index: 12
 
 .wrapper-image
   display: inline-block
   width: 250px
   overflow: hidden
-  box-shadow: 10px 10px 0px #ffd03d4d
   margin-bottom: 2em
+  border-radius: 25px
 .title
   margin-bottom: 35px
 .container a
@@ -147,10 +148,9 @@ header
 
 .line
   height: 80px
-  width: 110%
-  transform: rotate(-1deg)
+  width: 100%
   position: absolute
-  z-index: -1
-  left: -2px
-  bottom: -12px
+  z-index: 2
+  bottom: -32px
+  border-radius: 25% 81px
 </style>

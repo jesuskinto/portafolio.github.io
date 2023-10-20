@@ -35,6 +35,7 @@ export default {
   overflow: hidden
   padding: 10px
   margin: 10px
+  border-radius: 5px
 
   figure
     display: inline-block
